@@ -17,7 +17,7 @@ declare module "google-protobuf" {
                       messageId: (string | number),
                       suggestedPivot: number,
                       repeatedFields: number[],
-                      oneofFields?: number[][]): void;
+                      oneofFields?: number[][] | null): void;
     static toObjectList<T extends Message>(field: T[],
                                            toObjectFn: (includeInstance: boolean,
                                                         data: T) => Object,
