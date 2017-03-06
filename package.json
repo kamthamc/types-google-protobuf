@@ -1,13 +1,13 @@
 {
   "name": "types-google-protobuf",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.1.0",
+  "types": "google-protobuf.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npm run tslint --fix google-protobuf.d.ts",
+    "dist": "mkdir -p dist && cp google-protobuf.d.ts dist/ && cp google-protobuf-tests.ts dist/ && cp tsconfig.json dist/"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Marcus Longmuir",
+  "license": "MIT",
   "devDependencies": {
     "tslint": "^4.5.1",
     "typescript": "^2.2.1"

@@ -11,7 +11,6 @@ declare module "google-protobuf" {
   type FieldValue = (string|number|boolean|Uint8Array|any/*This should be Array<FieldValue>, but that isn't allowed*/|undefined)
 
   export class Message {
-    constructor();
     getJsPbMessageId(): (string | undefined);
     static initialize(msg: Message,
                       data: Message.MessageArray,
