@@ -18,7 +18,7 @@ import * as jspb from "google-protobuf";
 
 class MySimple extends jspb.Message {
   constructor(opt_data?: any) {
-    super();// This isn't actually called in the JS version of this file, but it's required by TS
+    super(); // This isn't actually called in the JS version of this file, but it's required by TS
     jspb.Message.initialize(this, opt_data, 0, -1, MySimple.repeatedFields_, null);
   };
 
@@ -32,7 +32,7 @@ class MySimple extends jspb.Message {
     const obj = {
       myString: jspb.Message.getFieldWithDefault(msg, 1, ""),
       myBool: jspb.Message.getFieldWithDefault(msg, 2, false),
-      someLabelsList: jspb.Message.getField(msg, 3)
+      someLabelsList: jspb.Message.getField(msg, 3),
     };
 
     if (includeInstance) {
@@ -86,21 +86,21 @@ class MySimple extends jspb.Message {
     if (f1.length > 0) {
       writer.writeString(
         1,
-        f1
+        f1,
       );
     }
     const f2 = message.getMyBool();
     if (f2) {
       writer.writeBool(
         2,
-        f2
+        f2,
       );
     }
     const f3 = message.getSomeLabelsList();
     if (f3.length > 0) {
       writer.writeRepeatedString(
         3,
-        f3
+        f3,
       );
     }
   }
@@ -121,11 +121,11 @@ class MySimple extends jspb.Message {
     jspb.Message.setField(this, 2, value);
   }
 
-  getSomeLabelsList(): Array<string> {
+  getSomeLabelsList(): string[] {
     return jspb.Message.getField(this, 3);
   }
 
-  setSomeLabelsList(value: Array<string>) {
+  setSomeLabelsList(value: string[]) {
     jspb.Message.setField(this, 3, value || []);
   }
 

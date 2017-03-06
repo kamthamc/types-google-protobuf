@@ -31,8 +31,7 @@
       "check-module",
       "check-separator",
       "check-type",
-      "check-typecast",
-      "check-preblock"
+      "check-typecast"
     ]
   },
   "jsRules": {

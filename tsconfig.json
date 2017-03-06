@@ -16,7 +16,7 @@
     "forceConsistentCasingInFileNames": true
   },
   "files": [
-    "google-protobuf.d.ts",
+    "index.d.ts",
     "google-protobuf-tests.ts"
   ]
 }
