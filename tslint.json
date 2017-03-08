@@ -1,7 +1,6 @@
 {
   "rules": {
     "align": [true, "parameters", "arguments", "statements"],
-    "array-type": [true, "array-simple"],
     "class-name": true,
     "comment-format": [true, "check-space"],
     "indent": [true, "spaces"],
