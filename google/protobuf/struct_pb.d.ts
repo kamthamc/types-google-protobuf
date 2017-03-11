@@ -6,6 +6,10 @@ import * as jspb from "google-protobuf";
 export class Struct extends jspb.Message {
   getFieldsMap(): jspb.Map<string, Value>;
   clearFieldsMap(): void;
+
+  toJavaScript(): {[key: string]: JavaScriptValue};
+  static fromJavaScript(value: {[key: string]: JavaScriptValue}): Struct;
+
   static deserializeBinary(bytes: Uint8Array): Struct;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Object;
@@ -51,6 +55,9 @@ export class Value extends jspb.Message {
   getListValue(): ListValue;
   setListValue(value: ListValue): void;
 
+  toJavaScript(): JavaScriptValue;
+  static fromJavaScript(value: JavaScriptValue): Value;
+
   getKindCase(): Value.KindCase;
   static deserializeBinary(bytes: Uint8Array): Value;
   serializeBinary(): Uint8Array;
@@ -81,6 +88,9 @@ export class ListValue extends jspb.Message {
   setValuesList(value: Array<Value>): void;
   addValues(opt_value?: Value, opt_index?: number): void;
 
+  toJavaScript(): Array<JavaScriptValue>;
+  static fromJavaScript(value: Array<JavaScriptValue>): ListValue;
+
   static deserializeBinary(bytes: Uint8Array): ListValue;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Object;
@@ -95,3 +105,4 @@ export enum NullValue {
   NULL_VALUE = 0,
 }
 
+export JavaScriptValue = null|number|string|boolean|Array|{};
