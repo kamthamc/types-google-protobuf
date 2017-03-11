@@ -4,872 +4,916 @@
 import * as jspb from "google-protobuf";
 
 export class FileDescriptorSet extends jspb.Message {
-	getFileList(): FileDescriptorProto[];
-	addFile(toAdd: FileDescriptorProto): void;
+  clearFileList(): void;
+  getFileList(): Array<FileDescriptorProto>;
+  setFileList(value: Array<FileDescriptorProto>): void;
+  addFile(opt_value?: FileDescriptorProto, opt_index?: number): void;
 
-	static deserializeBinary(bytes: Uint8Array): FileDescriptorSet;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: FileDescriptorSet): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: FileDescriptorSet, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: FileDescriptorSet, reader: jspb.BinaryReader): FileDescriptorSet;
-	static deserializeBinary(bytes: Uint8Array): FileDescriptorSet;
+  static deserializeBinary(bytes: Uint8Array): FileDescriptorSet;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: FileDescriptorSet): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FileDescriptorSet, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: FileDescriptorSet, reader: jspb.BinaryReader): FileDescriptorSet;
 }
-
-export namespace FileDescriptorSet {
-}
-
 
 export class FileDescriptorProto extends jspb.Message {
-	hasName(): boolean;
-	getName(): string;
-	setName(toSet: string): void;
+  hasName(): boolean;
+  clearName(): void;
+  getName(): string;
+  setName(value: string): void;
 
-	hasPackage(): boolean;
-	getPackage(): string;
-	setPackage(toSet: string): void;
+  hasPackage(): boolean;
+  clearPackage(): void;
+  getPackage(): string;
+  setPackage(value: string): void;
 
-	getDependencyList(): string[];
-	addDependency(toAdd: string): void;
+  clearDependencyList(): void;
+  getDependencyList(): Array<string>;
+  setDependencyList(value: Array<string>): void;
+  addDependency(value: string, opt_index?: number): void;
 
-	getPublicDependencyList(): number[];
-	addPublicDependency(toAdd: number): void;
+  clearPublicDependencyList(): void;
+  getPublicDependencyList(): Array<number>;
+  setPublicDependencyList(value: Array<number>): void;
+  addPublicDependency(value: number, opt_index?: number): void;
 
-	getWeakDependencyList(): number[];
-	addWeakDependency(toAdd: number): void;
+  clearWeakDependencyList(): void;
+  getWeakDependencyList(): Array<number>;
+  setWeakDependencyList(value: Array<number>): void;
+  addWeakDependency(value: number, opt_index?: number): void;
 
-	getMessageTypeList(): DescriptorProto[];
-	addMessageType(toAdd: DescriptorProto): void;
+  clearMessageTypeList(): void;
+  getMessageTypeList(): Array<DescriptorProto>;
+  setMessageTypeList(value: Array<DescriptorProto>): void;
+  addMessageType(opt_value?: DescriptorProto, opt_index?: number): void;
 
-	getEnumTypeList(): EnumDescriptorProto[];
-	addEnumType(toAdd: EnumDescriptorProto): void;
+  clearEnumTypeList(): void;
+  getEnumTypeList(): Array<EnumDescriptorProto>;
+  setEnumTypeList(value: Array<EnumDescriptorProto>): void;
+  addEnumType(opt_value?: EnumDescriptorProto, opt_index?: number): void;
 
-	getServiceList(): ServiceDescriptorProto[];
-	addService(toAdd: ServiceDescriptorProto): void;
+  clearServiceList(): void;
+  getServiceList(): Array<ServiceDescriptorProto>;
+  setServiceList(value: Array<ServiceDescriptorProto>): void;
+  addService(opt_value?: ServiceDescriptorProto, opt_index?: number): void;
 
-	getExtensionList(): FieldDescriptorProto[];
-	addExtension(toAdd: FieldDescriptorProto): void;
+  clearExtensionList(): void;
+  getExtensionList(): Array<FieldDescriptorProto>;
+  setExtensionList(value: Array<FieldDescriptorProto>): void;
+  addExtension(opt_value?: FieldDescriptorProto, opt_index?: number): void;
 
-	hasOptions(): boolean;
-	getOptions(): FileOptions;
-	setOptions(toSet: FileOptions): void;
+  hasOptions(): boolean;
+  clearOptions(): void;
+  getOptions(): FileOptions;
+  setOptions(value: FileOptions): void;
 
-	hasSourceCodeInfo(): boolean;
-	getSourceCodeInfo(): SourceCodeInfo;
-	setSourceCodeInfo(toSet: SourceCodeInfo): void;
+  hasSourceCodeInfo(): boolean;
+  clearSourceCodeInfo(): void;
+  getSourceCodeInfo(): SourceCodeInfo;
+  setSourceCodeInfo(value: SourceCodeInfo): void;
 
-	hasSyntax(): boolean;
-	getSyntax(): string;
-	setSyntax(toSet: string): void;
+  hasSyntax(): boolean;
+  clearSyntax(): void;
+  getSyntax(): string;
+  setSyntax(value: string): void;
 
-	static deserializeBinary(bytes: Uint8Array): FileDescriptorProto;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: FileDescriptorProto): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: FileDescriptorProto, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: FileDescriptorProto, reader: jspb.BinaryReader): FileDescriptorProto;
-	static deserializeBinary(bytes: Uint8Array): FileDescriptorProto;
+  static deserializeBinary(bytes: Uint8Array): FileDescriptorProto;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: FileDescriptorProto): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FileDescriptorProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: FileDescriptorProto, reader: jspb.BinaryReader): FileDescriptorProto;
 }
-
-export namespace FileDescriptorProto {
-}
-
 
 export class DescriptorProto extends jspb.Message {
-	hasName(): boolean;
-	getName(): string;
-	setName(toSet: string): void;
+  hasName(): boolean;
+  clearName(): void;
+  getName(): string;
+  setName(value: string): void;
 
-	getFieldList(): FieldDescriptorProto[];
-	addField(toAdd: FieldDescriptorProto): void;
+  clearFieldList(): void;
+  getFieldList(): Array<FieldDescriptorProto>;
+  setFieldList(value: Array<FieldDescriptorProto>): void;
+  addField(opt_value?: FieldDescriptorProto, opt_index?: number): void;
 
-	getExtensionList(): FieldDescriptorProto[];
-	addExtension(toAdd: FieldDescriptorProto): void;
+  clearExtensionList(): void;
+  getExtensionList(): Array<FieldDescriptorProto>;
+  setExtensionList(value: Array<FieldDescriptorProto>): void;
+  addExtension(opt_value?: FieldDescriptorProto, opt_index?: number): void;
 
-	getNestedTypeList(): DescriptorProto[];
-	addNestedType(toAdd: DescriptorProto): void;
+  clearNestedTypeList(): void;
+  getNestedTypeList(): Array<DescriptorProto>;
+  setNestedTypeList(value: Array<DescriptorProto>): void;
+  addNestedType(opt_value?: DescriptorProto, opt_index?: number): void;
 
-	getEnumTypeList(): EnumDescriptorProto[];
-	addEnumType(toAdd: EnumDescriptorProto): void;
+  clearEnumTypeList(): void;
+  getEnumTypeList(): Array<EnumDescriptorProto>;
+  setEnumTypeList(value: Array<EnumDescriptorProto>): void;
+  addEnumType(opt_value?: EnumDescriptorProto, opt_index?: number): void;
 
-	getExtensionRangeList(): DescriptorProto.ExtensionRange[];
-	addExtensionRange(toAdd: DescriptorProto.ExtensionRange): void;
+  clearExtensionRangeList(): void;
+  getExtensionRangeList(): Array<DescriptorProto.ExtensionRange>;
+  setExtensionRangeList(value: Array<DescriptorProto.ExtensionRange>): void;
+  addExtensionRange(opt_value?: DescriptorProto.ExtensionRange, opt_index?: number): void;
 
-	getOneofDeclList(): OneofDescriptorProto[];
-	addOneofDecl(toAdd: OneofDescriptorProto): void;
+  clearOneofDeclList(): void;
+  getOneofDeclList(): Array<OneofDescriptorProto>;
+  setOneofDeclList(value: Array<OneofDescriptorProto>): void;
+  addOneofDecl(opt_value?: OneofDescriptorProto, opt_index?: number): void;
 
-	hasOptions(): boolean;
-	getOptions(): MessageOptions;
-	setOptions(toSet: MessageOptions): void;
+  hasOptions(): boolean;
+  clearOptions(): void;
+  getOptions(): MessageOptions;
+  setOptions(value: MessageOptions): void;
 
-	getReservedRangeList(): DescriptorProto.ReservedRange[];
-	addReservedRange(toAdd: DescriptorProto.ReservedRange): void;
+  clearReservedRangeList(): void;
+  getReservedRangeList(): Array<DescriptorProto.ReservedRange>;
+  setReservedRangeList(value: Array<DescriptorProto.ReservedRange>): void;
+  addReservedRange(opt_value?: DescriptorProto.ReservedRange, opt_index?: number): void;
 
-	getReservedNameList(): string[];
-	addReservedName(toAdd: string): void;
+  clearReservedNameList(): void;
+  getReservedNameList(): Array<string>;
+  setReservedNameList(value: Array<string>): void;
+  addReservedName(value: string, opt_index?: number): void;
 
-	static deserializeBinary(bytes: Uint8Array): DescriptorProto;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: DescriptorProto): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: DescriptorProto, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: DescriptorProto, reader: jspb.BinaryReader): DescriptorProto;
-	static deserializeBinary(bytes: Uint8Array): DescriptorProto;
+  static deserializeBinary(bytes: Uint8Array): DescriptorProto;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: DescriptorProto): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: DescriptorProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: DescriptorProto, reader: jspb.BinaryReader): DescriptorProto;
 }
 
 export namespace DescriptorProto {
-		export class ExtensionRange extends jspb.Message {
-		hasStart(): boolean;
-		getStart(): number;
-		setStart(toSet: number): void;
+  export class ExtensionRange extends jspb.Message {
+    hasStart(): boolean;
+    clearStart(): void;
+    getStart(): number;
+    setStart(value: number): void;
 
-		hasEnd(): boolean;
-		getEnd(): number;
-		setEnd(toSet: number): void;
+    hasEnd(): boolean;
+    clearEnd(): void;
+    getEnd(): number;
+    setEnd(value: number): void;
 
-		static deserializeBinary(bytes: Uint8Array): ExtensionRange;
-		serializeBinary(): Uint8Array;
-		toObject(includeInstance?: boolean): Object;
-		static toObject(includeInstance: boolean, msg: ExtensionRange): Object;
-		static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-		static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-		static serializeBinaryToWriter(message: ExtensionRange, writer: jspb.BinaryWriter): void;
-		static deserializeBinaryFromReader(message: ExtensionRange, reader: jspb.BinaryReader): ExtensionRange;
-		static deserializeBinary(bytes: Uint8Array): ExtensionRange;
-	}
+    static deserializeBinary(bytes: Uint8Array): ExtensionRange;
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Object;
+    static toObject(includeInstance: boolean, msg: ExtensionRange): Object;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: ExtensionRange, writer: jspb.BinaryWriter): void;
+    static deserializeBinaryFromReader(message: ExtensionRange, reader: jspb.BinaryReader): ExtensionRange;
+  }
+  export class ReservedRange extends jspb.Message {
+    hasStart(): boolean;
+    clearStart(): void;
+    getStart(): number;
+    setStart(value: number): void;
 
-	export namespace ExtensionRange {
-	}
+    hasEnd(): boolean;
+    clearEnd(): void;
+    getEnd(): number;
+    setEnd(value: number): void;
 
-
-		export class ReservedRange extends jspb.Message {
-		hasStart(): boolean;
-		getStart(): number;
-		setStart(toSet: number): void;
-
-		hasEnd(): boolean;
-		getEnd(): number;
-		setEnd(toSet: number): void;
-
-		static deserializeBinary(bytes: Uint8Array): ReservedRange;
-		serializeBinary(): Uint8Array;
-		toObject(includeInstance?: boolean): Object;
-		static toObject(includeInstance: boolean, msg: ReservedRange): Object;
-		static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-		static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-		static serializeBinaryToWriter(message: ReservedRange, writer: jspb.BinaryWriter): void;
-		static deserializeBinaryFromReader(message: ReservedRange, reader: jspb.BinaryReader): ReservedRange;
-		static deserializeBinary(bytes: Uint8Array): ReservedRange;
-	}
-
-	export namespace ReservedRange {
-	}
-
-
+    static deserializeBinary(bytes: Uint8Array): ReservedRange;
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Object;
+    static toObject(includeInstance: boolean, msg: ReservedRange): Object;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: ReservedRange, writer: jspb.BinaryWriter): void;
+    static deserializeBinaryFromReader(message: ReservedRange, reader: jspb.BinaryReader): ReservedRange;
+  }
 }
 
 
 export class FieldDescriptorProto extends jspb.Message {
-	hasName(): boolean;
-	getName(): string;
-	setName(toSet: string): void;
+  hasName(): boolean;
+  clearName(): void;
+  getName(): string;
+  setName(value: string): void;
 
-	hasNumber(): boolean;
-	getNumber(): number;
-	setNumber(toSet: number): void;
+  hasNumber(): boolean;
+  clearNumber(): void;
+  getNumber(): number;
+  setNumber(value: number): void;
 
-	hasLabel(): boolean;
-	getLabel(): FieldDescriptorProto.Label;
-	setLabel(toSet: FieldDescriptorProto.Label): void;
+  hasLabel(): boolean;
+  clearLabel(): void;
+  getLabel(): FieldDescriptorProto.Label;
+  setLabel(value: FieldDescriptorProto.Label): void;
 
-	hasType(): boolean;
-	getType(): FieldDescriptorProto.Type;
-	setType(toSet: FieldDescriptorProto.Type): void;
+  hasType(): boolean;
+  clearType(): void;
+  getType(): FieldDescriptorProto.Type;
+  setType(value: FieldDescriptorProto.Type): void;
 
-	hasTypeName(): boolean;
-	getTypeName(): string;
-	setTypeName(toSet: string): void;
+  hasTypeName(): boolean;
+  clearTypeName(): void;
+  getTypeName(): string;
+  setTypeName(value: string): void;
 
-	hasExtendee(): boolean;
-	getExtendee(): string;
-	setExtendee(toSet: string): void;
+  hasExtendee(): boolean;
+  clearExtendee(): void;
+  getExtendee(): string;
+  setExtendee(value: string): void;
 
-	hasDefaultValue(): boolean;
-	getDefaultValue(): string;
-	setDefaultValue(toSet: string): void;
+  hasDefaultValue(): boolean;
+  clearDefaultValue(): void;
+  getDefaultValue(): string;
+  setDefaultValue(value: string): void;
 
-	hasOneofIndex(): boolean;
-	getOneofIndex(): number;
-	setOneofIndex(toSet: number): void;
+  hasOneofIndex(): boolean;
+  clearOneofIndex(): void;
+  getOneofIndex(): number;
+  setOneofIndex(value: number): void;
 
-	hasJsonName(): boolean;
-	getJsonName(): string;
-	setJsonName(toSet: string): void;
+  hasJsonName(): boolean;
+  clearJsonName(): void;
+  getJsonName(): string;
+  setJsonName(value: string): void;
 
-	hasOptions(): boolean;
-	getOptions(): FieldOptions;
-	setOptions(toSet: FieldOptions): void;
+  hasOptions(): boolean;
+  clearOptions(): void;
+  getOptions(): FieldOptions;
+  setOptions(value: FieldOptions): void;
 
-	static deserializeBinary(bytes: Uint8Array): FieldDescriptorProto;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: FieldDescriptorProto): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: FieldDescriptorProto, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: FieldDescriptorProto, reader: jspb.BinaryReader): FieldDescriptorProto;
-	static deserializeBinary(bytes: Uint8Array): FieldDescriptorProto;
+  static deserializeBinary(bytes: Uint8Array): FieldDescriptorProto;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: FieldDescriptorProto): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FieldDescriptorProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: FieldDescriptorProto, reader: jspb.BinaryReader): FieldDescriptorProto;
 }
 
 export namespace FieldDescriptorProto {
-		export enum Type {
-		TYPE_DOUBLE = 1,
-		TYPE_FLOAT = 2,
-		TYPE_INT64 = 3,
-		TYPE_UINT64 = 4,
-		TYPE_INT32 = 5,
-		TYPE_FIXED64 = 6,
-		TYPE_FIXED32 = 7,
-		TYPE_BOOL = 8,
-		TYPE_STRING = 9,
-		TYPE_GROUP = 10,
-		TYPE_MESSAGE = 11,
-		TYPE_BYTES = 12,
-		TYPE_UINT32 = 13,
-		TYPE_ENUM = 14,
-		TYPE_SFIXED32 = 15,
-		TYPE_SFIXED64 = 16,
-		TYPE_SINT32 = 17,
-		TYPE_SINT64 = 18,
-	}
-
-		export enum Label {
-		LABEL_OPTIONAL = 1,
-		LABEL_REQUIRED = 2,
-		LABEL_REPEATED = 3,
-	}
-
+  export enum Type {
+    TYPE_DOUBLE = 1,
+    TYPE_FLOAT = 2,
+    TYPE_INT64 = 3,
+    TYPE_UINT64 = 4,
+    TYPE_INT32 = 5,
+    TYPE_FIXED64 = 6,
+    TYPE_FIXED32 = 7,
+    TYPE_BOOL = 8,
+    TYPE_STRING = 9,
+    TYPE_GROUP = 10,
+    TYPE_MESSAGE = 11,
+    TYPE_BYTES = 12,
+    TYPE_UINT32 = 13,
+    TYPE_ENUM = 14,
+    TYPE_SFIXED32 = 15,
+    TYPE_SFIXED64 = 16,
+    TYPE_SINT32 = 17,
+    TYPE_SINT64 = 18,
+  }
+  export enum Label {
+    LABEL_OPTIONAL = 1,
+    LABEL_REQUIRED = 2,
+    LABEL_REPEATED = 3,
+  }
 }
 
 
 export class OneofDescriptorProto extends jspb.Message {
-	hasName(): boolean;
-	getName(): string;
-	setName(toSet: string): void;
+  hasName(): boolean;
+  clearName(): void;
+  getName(): string;
+  setName(value: string): void;
 
-	hasOptions(): boolean;
-	getOptions(): OneofOptions;
-	setOptions(toSet: OneofOptions): void;
+  hasOptions(): boolean;
+  clearOptions(): void;
+  getOptions(): OneofOptions;
+  setOptions(value: OneofOptions): void;
 
-	static deserializeBinary(bytes: Uint8Array): OneofDescriptorProto;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: OneofDescriptorProto): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: OneofDescriptorProto, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: OneofDescriptorProto, reader: jspb.BinaryReader): OneofDescriptorProto;
-	static deserializeBinary(bytes: Uint8Array): OneofDescriptorProto;
+  static deserializeBinary(bytes: Uint8Array): OneofDescriptorProto;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: OneofDescriptorProto): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: OneofDescriptorProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: OneofDescriptorProto, reader: jspb.BinaryReader): OneofDescriptorProto;
 }
-
-export namespace OneofDescriptorProto {
-}
-
 
 export class EnumDescriptorProto extends jspb.Message {
-	hasName(): boolean;
-	getName(): string;
-	setName(toSet: string): void;
+  hasName(): boolean;
+  clearName(): void;
+  getName(): string;
+  setName(value: string): void;
 
-	getValueList(): EnumValueDescriptorProto[];
-	addValue(toAdd: EnumValueDescriptorProto): void;
+  clearValueList(): void;
+  getValueList(): Array<EnumValueDescriptorProto>;
+  setValueList(value: Array<EnumValueDescriptorProto>): void;
+  addValue(opt_value?: EnumValueDescriptorProto, opt_index?: number): void;
 
-	hasOptions(): boolean;
-	getOptions(): EnumOptions;
-	setOptions(toSet: EnumOptions): void;
+  hasOptions(): boolean;
+  clearOptions(): void;
+  getOptions(): EnumOptions;
+  setOptions(value: EnumOptions): void;
 
-	static deserializeBinary(bytes: Uint8Array): EnumDescriptorProto;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: EnumDescriptorProto): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: EnumDescriptorProto, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: EnumDescriptorProto, reader: jspb.BinaryReader): EnumDescriptorProto;
-	static deserializeBinary(bytes: Uint8Array): EnumDescriptorProto;
+  static deserializeBinary(bytes: Uint8Array): EnumDescriptorProto;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: EnumDescriptorProto): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: EnumDescriptorProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: EnumDescriptorProto, reader: jspb.BinaryReader): EnumDescriptorProto;
 }
-
-export namespace EnumDescriptorProto {
-}
-
 
 export class EnumValueDescriptorProto extends jspb.Message {
-	hasName(): boolean;
-	getName(): string;
-	setName(toSet: string): void;
+  hasName(): boolean;
+  clearName(): void;
+  getName(): string;
+  setName(value: string): void;
 
-	hasNumber(): boolean;
-	getNumber(): number;
-	setNumber(toSet: number): void;
+  hasNumber(): boolean;
+  clearNumber(): void;
+  getNumber(): number;
+  setNumber(value: number): void;
 
-	hasOptions(): boolean;
-	getOptions(): EnumValueOptions;
-	setOptions(toSet: EnumValueOptions): void;
+  hasOptions(): boolean;
+  clearOptions(): void;
+  getOptions(): EnumValueOptions;
+  setOptions(value: EnumValueOptions): void;
 
-	static deserializeBinary(bytes: Uint8Array): EnumValueDescriptorProto;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: EnumValueDescriptorProto): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: EnumValueDescriptorProto, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: EnumValueDescriptorProto, reader: jspb.BinaryReader): EnumValueDescriptorProto;
-	static deserializeBinary(bytes: Uint8Array): EnumValueDescriptorProto;
+  static deserializeBinary(bytes: Uint8Array): EnumValueDescriptorProto;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: EnumValueDescriptorProto): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: EnumValueDescriptorProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: EnumValueDescriptorProto, reader: jspb.BinaryReader): EnumValueDescriptorProto;
 }
-
-export namespace EnumValueDescriptorProto {
-}
-
 
 export class ServiceDescriptorProto extends jspb.Message {
-	hasName(): boolean;
-	getName(): string;
-	setName(toSet: string): void;
+  hasName(): boolean;
+  clearName(): void;
+  getName(): string;
+  setName(value: string): void;
 
-	getMethodList(): MethodDescriptorProto[];
-	addMethod(toAdd: MethodDescriptorProto): void;
+  clearMethodList(): void;
+  getMethodList(): Array<MethodDescriptorProto>;
+  setMethodList(value: Array<MethodDescriptorProto>): void;
+  addMethod(opt_value?: MethodDescriptorProto, opt_index?: number): void;
 
-	hasOptions(): boolean;
-	getOptions(): ServiceOptions;
-	setOptions(toSet: ServiceOptions): void;
+  hasOptions(): boolean;
+  clearOptions(): void;
+  getOptions(): ServiceOptions;
+  setOptions(value: ServiceOptions): void;
 
-	static deserializeBinary(bytes: Uint8Array): ServiceDescriptorProto;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: ServiceDescriptorProto): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: ServiceDescriptorProto, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: ServiceDescriptorProto, reader: jspb.BinaryReader): ServiceDescriptorProto;
-	static deserializeBinary(bytes: Uint8Array): ServiceDescriptorProto;
+  static deserializeBinary(bytes: Uint8Array): ServiceDescriptorProto;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: ServiceDescriptorProto): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ServiceDescriptorProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: ServiceDescriptorProto, reader: jspb.BinaryReader): ServiceDescriptorProto;
 }
-
-export namespace ServiceDescriptorProto {
-}
-
 
 export class MethodDescriptorProto extends jspb.Message {
-	hasName(): boolean;
-	getName(): string;
-	setName(toSet: string): void;
+  hasName(): boolean;
+  clearName(): void;
+  getName(): string;
+  setName(value: string): void;
 
-	hasInputType(): boolean;
-	getInputType(): string;
-	setInputType(toSet: string): void;
+  hasInputType(): boolean;
+  clearInputType(): void;
+  getInputType(): string;
+  setInputType(value: string): void;
 
-	hasOutputType(): boolean;
-	getOutputType(): string;
-	setOutputType(toSet: string): void;
+  hasOutputType(): boolean;
+  clearOutputType(): void;
+  getOutputType(): string;
+  setOutputType(value: string): void;
 
-	hasOptions(): boolean;
-	getOptions(): MethodOptions;
-	setOptions(toSet: MethodOptions): void;
+  hasOptions(): boolean;
+  clearOptions(): void;
+  getOptions(): MethodOptions;
+  setOptions(value: MethodOptions): void;
 
-	hasClientStreaming(): boolean;
-	getClientStreaming(): boolean;
-	setClientStreaming(toSet: boolean): void;
+  hasClientStreaming(): boolean;
+  clearClientStreaming(): void;
+  getClientStreaming(): boolean;
+  setClientStreaming(value: boolean): void;
 
-	hasServerStreaming(): boolean;
-	getServerStreaming(): boolean;
-	setServerStreaming(toSet: boolean): void;
+  hasServerStreaming(): boolean;
+  clearServerStreaming(): void;
+  getServerStreaming(): boolean;
+  setServerStreaming(value: boolean): void;
 
-	static deserializeBinary(bytes: Uint8Array): MethodDescriptorProto;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: MethodDescriptorProto): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: MethodDescriptorProto, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: MethodDescriptorProto, reader: jspb.BinaryReader): MethodDescriptorProto;
-	static deserializeBinary(bytes: Uint8Array): MethodDescriptorProto;
+  static deserializeBinary(bytes: Uint8Array): MethodDescriptorProto;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: MethodDescriptorProto): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: MethodDescriptorProto, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: MethodDescriptorProto, reader: jspb.BinaryReader): MethodDescriptorProto;
 }
-
-export namespace MethodDescriptorProto {
-}
-
 
 export class FileOptions extends jspb.Message {
-	hasJavaPackage(): boolean;
-	getJavaPackage(): string;
-	setJavaPackage(toSet: string): void;
+  hasJavaPackage(): boolean;
+  clearJavaPackage(): void;
+  getJavaPackage(): string;
+  setJavaPackage(value: string): void;
 
-	hasJavaOuterClassname(): boolean;
-	getJavaOuterClassname(): string;
-	setJavaOuterClassname(toSet: string): void;
+  hasJavaOuterClassname(): boolean;
+  clearJavaOuterClassname(): void;
+  getJavaOuterClassname(): string;
+  setJavaOuterClassname(value: string): void;
 
-	hasJavaMultipleFiles(): boolean;
-	getJavaMultipleFiles(): boolean;
-	setJavaMultipleFiles(toSet: boolean): void;
+  hasJavaMultipleFiles(): boolean;
+  clearJavaMultipleFiles(): void;
+  getJavaMultipleFiles(): boolean;
+  setJavaMultipleFiles(value: boolean): void;
 
-	hasJavaGenerateEqualsAndHash(): boolean;
-	getJavaGenerateEqualsAndHash(): boolean;
-	setJavaGenerateEqualsAndHash(toSet: boolean): void;
+  hasJavaGenerateEqualsAndHash(): boolean;
+  clearJavaGenerateEqualsAndHash(): void;
+  getJavaGenerateEqualsAndHash(): boolean;
+  setJavaGenerateEqualsAndHash(value: boolean): void;
 
-	hasJavaStringCheckUtf8(): boolean;
-	getJavaStringCheckUtf8(): boolean;
-	setJavaStringCheckUtf8(toSet: boolean): void;
+  hasJavaStringCheckUtf8(): boolean;
+  clearJavaStringCheckUtf8(): void;
+  getJavaStringCheckUtf8(): boolean;
+  setJavaStringCheckUtf8(value: boolean): void;
 
-	hasOptimizeFor(): boolean;
-	getOptimizeFor(): FileOptions.OptimizeMode;
-	setOptimizeFor(toSet: FileOptions.OptimizeMode): void;
+  hasOptimizeFor(): boolean;
+  clearOptimizeFor(): void;
+  getOptimizeFor(): FileOptions.OptimizeMode;
+  setOptimizeFor(value: FileOptions.OptimizeMode): void;
 
-	hasGoPackage(): boolean;
-	getGoPackage(): string;
-	setGoPackage(toSet: string): void;
+  hasGoPackage(): boolean;
+  clearGoPackage(): void;
+  getGoPackage(): string;
+  setGoPackage(value: string): void;
 
-	hasCcGenericServices(): boolean;
-	getCcGenericServices(): boolean;
-	setCcGenericServices(toSet: boolean): void;
+  hasCcGenericServices(): boolean;
+  clearCcGenericServices(): void;
+  getCcGenericServices(): boolean;
+  setCcGenericServices(value: boolean): void;
 
-	hasJavaGenericServices(): boolean;
-	getJavaGenericServices(): boolean;
-	setJavaGenericServices(toSet: boolean): void;
+  hasJavaGenericServices(): boolean;
+  clearJavaGenericServices(): void;
+  getJavaGenericServices(): boolean;
+  setJavaGenericServices(value: boolean): void;
 
-	hasPyGenericServices(): boolean;
-	getPyGenericServices(): boolean;
-	setPyGenericServices(toSet: boolean): void;
+  hasPyGenericServices(): boolean;
+  clearPyGenericServices(): void;
+  getPyGenericServices(): boolean;
+  setPyGenericServices(value: boolean): void;
 
-	hasDeprecated(): boolean;
-	getDeprecated(): boolean;
-	setDeprecated(toSet: boolean): void;
+  hasDeprecated(): boolean;
+  clearDeprecated(): void;
+  getDeprecated(): boolean;
+  setDeprecated(value: boolean): void;
 
-	hasCcEnableArenas(): boolean;
-	getCcEnableArenas(): boolean;
-	setCcEnableArenas(toSet: boolean): void;
+  hasCcEnableArenas(): boolean;
+  clearCcEnableArenas(): void;
+  getCcEnableArenas(): boolean;
+  setCcEnableArenas(value: boolean): void;
 
-	hasObjcClassPrefix(): boolean;
-	getObjcClassPrefix(): string;
-	setObjcClassPrefix(toSet: string): void;
+  hasObjcClassPrefix(): boolean;
+  clearObjcClassPrefix(): void;
+  getObjcClassPrefix(): string;
+  setObjcClassPrefix(value: string): void;
 
-	hasCsharpNamespace(): boolean;
-	getCsharpNamespace(): string;
-	setCsharpNamespace(toSet: string): void;
+  hasCsharpNamespace(): boolean;
+  clearCsharpNamespace(): void;
+  getCsharpNamespace(): string;
+  setCsharpNamespace(value: string): void;
 
-	hasSwiftPrefix(): boolean;
-	getSwiftPrefix(): string;
-	setSwiftPrefix(toSet: string): void;
+  hasSwiftPrefix(): boolean;
+  clearSwiftPrefix(): void;
+  getSwiftPrefix(): string;
+  setSwiftPrefix(value: string): void;
 
-	getUninterpretedOptionList(): UninterpretedOption[];
-	addUninterpretedOption(toAdd: UninterpretedOption): void;
+  clearUninterpretedOptionList(): void;
+  getUninterpretedOptionList(): Array<UninterpretedOption>;
+  setUninterpretedOptionList(value: Array<UninterpretedOption>): void;
+  addUninterpretedOption(opt_value?: UninterpretedOption, opt_index?: number): void;
 
-	static deserializeBinary(bytes: Uint8Array): FileOptions;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: FileOptions): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: FileOptions, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: FileOptions, reader: jspb.BinaryReader): FileOptions;
-	static deserializeBinary(bytes: Uint8Array): FileOptions;
+  static deserializeBinary(bytes: Uint8Array): FileOptions;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: FileOptions): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FileOptions, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: FileOptions, reader: jspb.BinaryReader): FileOptions;
 }
 
 export namespace FileOptions {
-		export enum OptimizeMode {
-		SPEED = 1,
-		CODE_SIZE = 2,
-		LITE_RUNTIME = 3,
-	}
-
+  export enum OptimizeMode {
+    SPEED = 1,
+    CODE_SIZE = 2,
+    LITE_RUNTIME = 3,
+  }
 }
 
 
 export class MessageOptions extends jspb.Message {
-	hasMessageSetWireFormat(): boolean;
-	getMessageSetWireFormat(): boolean;
-	setMessageSetWireFormat(toSet: boolean): void;
+  hasMessageSetWireFormat(): boolean;
+  clearMessageSetWireFormat(): void;
+  getMessageSetWireFormat(): boolean;
+  setMessageSetWireFormat(value: boolean): void;
 
-	hasNoStandardDescriptorAccessor(): boolean;
-	getNoStandardDescriptorAccessor(): boolean;
-	setNoStandardDescriptorAccessor(toSet: boolean): void;
+  hasNoStandardDescriptorAccessor(): boolean;
+  clearNoStandardDescriptorAccessor(): void;
+  getNoStandardDescriptorAccessor(): boolean;
+  setNoStandardDescriptorAccessor(value: boolean): void;
 
-	hasDeprecated(): boolean;
-	getDeprecated(): boolean;
-	setDeprecated(toSet: boolean): void;
+  hasDeprecated(): boolean;
+  clearDeprecated(): void;
+  getDeprecated(): boolean;
+  setDeprecated(value: boolean): void;
 
-	hasMapEntry(): boolean;
-	getMapEntry(): boolean;
-	setMapEntry(toSet: boolean): void;
+  hasMapEntry(): boolean;
+  clearMapEntry(): void;
+  getMapEntry(): boolean;
+  setMapEntry(value: boolean): void;
 
-	getUninterpretedOptionList(): UninterpretedOption[];
-	addUninterpretedOption(toAdd: UninterpretedOption): void;
+  clearUninterpretedOptionList(): void;
+  getUninterpretedOptionList(): Array<UninterpretedOption>;
+  setUninterpretedOptionList(value: Array<UninterpretedOption>): void;
+  addUninterpretedOption(opt_value?: UninterpretedOption, opt_index?: number): void;
 
-	static deserializeBinary(bytes: Uint8Array): MessageOptions;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: MessageOptions): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: MessageOptions, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: MessageOptions, reader: jspb.BinaryReader): MessageOptions;
-	static deserializeBinary(bytes: Uint8Array): MessageOptions;
+  static deserializeBinary(bytes: Uint8Array): MessageOptions;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: MessageOptions): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: MessageOptions, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: MessageOptions, reader: jspb.BinaryReader): MessageOptions;
 }
-
-export namespace MessageOptions {
-}
-
 
 export class FieldOptions extends jspb.Message {
-	hasCtype(): boolean;
-	getCtype(): FieldOptions.CType;
-	setCtype(toSet: FieldOptions.CType): void;
+  hasCtype(): boolean;
+  clearCtype(): void;
+  getCtype(): FieldOptions.CType;
+  setCtype(value: FieldOptions.CType): void;
 
-	hasPacked(): boolean;
-	getPacked(): boolean;
-	setPacked(toSet: boolean): void;
+  hasPacked(): boolean;
+  clearPacked(): void;
+  getPacked(): boolean;
+  setPacked(value: boolean): void;
 
-	hasJstype(): boolean;
-	getJstype(): FieldOptions.JSType;
-	setJstype(toSet: FieldOptions.JSType): void;
+  hasJstype(): boolean;
+  clearJstype(): void;
+  getJstype(): FieldOptions.JSType;
+  setJstype(value: FieldOptions.JSType): void;
 
-	hasLazy(): boolean;
-	getLazy(): boolean;
-	setLazy(toSet: boolean): void;
+  hasLazy(): boolean;
+  clearLazy(): void;
+  getLazy(): boolean;
+  setLazy(value: boolean): void;
 
-	hasDeprecated(): boolean;
-	getDeprecated(): boolean;
-	setDeprecated(toSet: boolean): void;
+  hasDeprecated(): boolean;
+  clearDeprecated(): void;
+  getDeprecated(): boolean;
+  setDeprecated(value: boolean): void;
 
-	hasWeak(): boolean;
-	getWeak(): boolean;
-	setWeak(toSet: boolean): void;
+  hasWeak(): boolean;
+  clearWeak(): void;
+  getWeak(): boolean;
+  setWeak(value: boolean): void;
 
-	getUninterpretedOptionList(): UninterpretedOption[];
-	addUninterpretedOption(toAdd: UninterpretedOption): void;
+  clearUninterpretedOptionList(): void;
+  getUninterpretedOptionList(): Array<UninterpretedOption>;
+  setUninterpretedOptionList(value: Array<UninterpretedOption>): void;
+  addUninterpretedOption(opt_value?: UninterpretedOption, opt_index?: number): void;
 
-	static deserializeBinary(bytes: Uint8Array): FieldOptions;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: FieldOptions): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: FieldOptions, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: FieldOptions, reader: jspb.BinaryReader): FieldOptions;
-	static deserializeBinary(bytes: Uint8Array): FieldOptions;
+  static deserializeBinary(bytes: Uint8Array): FieldOptions;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: FieldOptions): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: FieldOptions, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: FieldOptions, reader: jspb.BinaryReader): FieldOptions;
 }
 
 export namespace FieldOptions {
-		export enum CType {
-		STRING = 0,
-		CORD = 1,
-		STRING_PIECE = 2,
-	}
-
-		export enum JSType {
-		JS_NORMAL = 0,
-		JS_STRING = 1,
-		JS_NUMBER = 2,
-	}
-
+  export enum CType {
+    STRING = 0,
+    CORD = 1,
+    STRING_PIECE = 2,
+  }
+  export enum JSType {
+    JS_NORMAL = 0,
+    JS_STRING = 1,
+    JS_NUMBER = 2,
+  }
 }
 
 
 export class OneofOptions extends jspb.Message {
-	getUninterpretedOptionList(): UninterpretedOption[];
-	addUninterpretedOption(toAdd: UninterpretedOption): void;
+  clearUninterpretedOptionList(): void;
+  getUninterpretedOptionList(): Array<UninterpretedOption>;
+  setUninterpretedOptionList(value: Array<UninterpretedOption>): void;
+  addUninterpretedOption(opt_value?: UninterpretedOption, opt_index?: number): void;
 
-	static deserializeBinary(bytes: Uint8Array): OneofOptions;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: OneofOptions): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: OneofOptions, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: OneofOptions, reader: jspb.BinaryReader): OneofOptions;
-	static deserializeBinary(bytes: Uint8Array): OneofOptions;
+  static deserializeBinary(bytes: Uint8Array): OneofOptions;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: OneofOptions): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: OneofOptions, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: OneofOptions, reader: jspb.BinaryReader): OneofOptions;
 }
-
-export namespace OneofOptions {
-}
-
 
 export class EnumOptions extends jspb.Message {
-	hasAllowAlias(): boolean;
-	getAllowAlias(): boolean;
-	setAllowAlias(toSet: boolean): void;
+  hasAllowAlias(): boolean;
+  clearAllowAlias(): void;
+  getAllowAlias(): boolean;
+  setAllowAlias(value: boolean): void;
 
-	hasDeprecated(): boolean;
-	getDeprecated(): boolean;
-	setDeprecated(toSet: boolean): void;
+  hasDeprecated(): boolean;
+  clearDeprecated(): void;
+  getDeprecated(): boolean;
+  setDeprecated(value: boolean): void;
 
-	getUninterpretedOptionList(): UninterpretedOption[];
-	addUninterpretedOption(toAdd: UninterpretedOption): void;
+  clearUninterpretedOptionList(): void;
+  getUninterpretedOptionList(): Array<UninterpretedOption>;
+  setUninterpretedOptionList(value: Array<UninterpretedOption>): void;
+  addUninterpretedOption(opt_value?: UninterpretedOption, opt_index?: number): void;
 
-	static deserializeBinary(bytes: Uint8Array): EnumOptions;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: EnumOptions): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: EnumOptions, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: EnumOptions, reader: jspb.BinaryReader): EnumOptions;
-	static deserializeBinary(bytes: Uint8Array): EnumOptions;
+  static deserializeBinary(bytes: Uint8Array): EnumOptions;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: EnumOptions): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: EnumOptions, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: EnumOptions, reader: jspb.BinaryReader): EnumOptions;
 }
-
-export namespace EnumOptions {
-}
-
 
 export class EnumValueOptions extends jspb.Message {
-	hasDeprecated(): boolean;
-	getDeprecated(): boolean;
-	setDeprecated(toSet: boolean): void;
+  hasDeprecated(): boolean;
+  clearDeprecated(): void;
+  getDeprecated(): boolean;
+  setDeprecated(value: boolean): void;
 
-	getUninterpretedOptionList(): UninterpretedOption[];
-	addUninterpretedOption(toAdd: UninterpretedOption): void;
+  clearUninterpretedOptionList(): void;
+  getUninterpretedOptionList(): Array<UninterpretedOption>;
+  setUninterpretedOptionList(value: Array<UninterpretedOption>): void;
+  addUninterpretedOption(opt_value?: UninterpretedOption, opt_index?: number): void;
 
-	static deserializeBinary(bytes: Uint8Array): EnumValueOptions;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: EnumValueOptions): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: EnumValueOptions, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: EnumValueOptions, reader: jspb.BinaryReader): EnumValueOptions;
-	static deserializeBinary(bytes: Uint8Array): EnumValueOptions;
+  static deserializeBinary(bytes: Uint8Array): EnumValueOptions;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: EnumValueOptions): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: EnumValueOptions, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: EnumValueOptions, reader: jspb.BinaryReader): EnumValueOptions;
 }
-
-export namespace EnumValueOptions {
-}
-
 
 export class ServiceOptions extends jspb.Message {
-	hasDeprecated(): boolean;
-	getDeprecated(): boolean;
-	setDeprecated(toSet: boolean): void;
+  hasDeprecated(): boolean;
+  clearDeprecated(): void;
+  getDeprecated(): boolean;
+  setDeprecated(value: boolean): void;
 
-	getUninterpretedOptionList(): UninterpretedOption[];
-	addUninterpretedOption(toAdd: UninterpretedOption): void;
+  clearUninterpretedOptionList(): void;
+  getUninterpretedOptionList(): Array<UninterpretedOption>;
+  setUninterpretedOptionList(value: Array<UninterpretedOption>): void;
+  addUninterpretedOption(opt_value?: UninterpretedOption, opt_index?: number): void;
 
-	static deserializeBinary(bytes: Uint8Array): ServiceOptions;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: ServiceOptions): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: ServiceOptions, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: ServiceOptions, reader: jspb.BinaryReader): ServiceOptions;
-	static deserializeBinary(bytes: Uint8Array): ServiceOptions;
+  static deserializeBinary(bytes: Uint8Array): ServiceOptions;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: ServiceOptions): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ServiceOptions, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: ServiceOptions, reader: jspb.BinaryReader): ServiceOptions;
 }
-
-export namespace ServiceOptions {
-}
-
 
 export class MethodOptions extends jspb.Message {
-	hasDeprecated(): boolean;
-	getDeprecated(): boolean;
-	setDeprecated(toSet: boolean): void;
+  hasDeprecated(): boolean;
+  clearDeprecated(): void;
+  getDeprecated(): boolean;
+  setDeprecated(value: boolean): void;
 
-	hasIdempotencyLevel(): boolean;
-	getIdempotencyLevel(): MethodOptions.IdempotencyLevel;
-	setIdempotencyLevel(toSet: MethodOptions.IdempotencyLevel): void;
+  hasIdempotencyLevel(): boolean;
+  clearIdempotencyLevel(): void;
+  getIdempotencyLevel(): MethodOptions.IdempotencyLevel;
+  setIdempotencyLevel(value: MethodOptions.IdempotencyLevel): void;
 
-	getUninterpretedOptionList(): UninterpretedOption[];
-	addUninterpretedOption(toAdd: UninterpretedOption): void;
+  clearUninterpretedOptionList(): void;
+  getUninterpretedOptionList(): Array<UninterpretedOption>;
+  setUninterpretedOptionList(value: Array<UninterpretedOption>): void;
+  addUninterpretedOption(opt_value?: UninterpretedOption, opt_index?: number): void;
 
-	static deserializeBinary(bytes: Uint8Array): MethodOptions;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: MethodOptions): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: MethodOptions, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: MethodOptions, reader: jspb.BinaryReader): MethodOptions;
-	static deserializeBinary(bytes: Uint8Array): MethodOptions;
+  static deserializeBinary(bytes: Uint8Array): MethodOptions;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: MethodOptions): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: MethodOptions, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: MethodOptions, reader: jspb.BinaryReader): MethodOptions;
 }
 
 export namespace MethodOptions {
-		export enum IdempotencyLevel {
-		IDEMPOTENCY_UNKNOWN = 0,
-		NO_SIDE_EFFECTS = 1,
-		IDEMPOTENT = 2,
-	}
-
+  export enum IdempotencyLevel {
+    IDEMPOTENCY_UNKNOWN = 0,
+    NO_SIDE_EFFECTS = 1,
+    IDEMPOTENT = 2,
+  }
 }
 
 
 export class UninterpretedOption extends jspb.Message {
-	getNameList(): UninterpretedOption.NamePart[];
-	addName(toAdd: UninterpretedOption.NamePart): void;
+  clearNameList(): void;
+  getNameList(): Array<UninterpretedOption.NamePart>;
+  setNameList(value: Array<UninterpretedOption.NamePart>): void;
+  addName(opt_value?: UninterpretedOption.NamePart, opt_index?: number): void;
 
-	hasIdentifierValue(): boolean;
-	getIdentifierValue(): string;
-	setIdentifierValue(toSet: string): void;
+  hasIdentifierValue(): boolean;
+  clearIdentifierValue(): void;
+  getIdentifierValue(): string;
+  setIdentifierValue(value: string): void;
 
-	hasPositiveIntValue(): boolean;
-	getPositiveIntValue(): number;
-	setPositiveIntValue(toSet: number): void;
+  hasPositiveIntValue(): boolean;
+  clearPositiveIntValue(): void;
+  getPositiveIntValue(): number;
+  setPositiveIntValue(value: number): void;
 
-	hasNegativeIntValue(): boolean;
-	getNegativeIntValue(): number;
-	setNegativeIntValue(toSet: number): void;
+  hasNegativeIntValue(): boolean;
+  clearNegativeIntValue(): void;
+  getNegativeIntValue(): number;
+  setNegativeIntValue(value: number): void;
 
-	hasDoubleValue(): boolean;
-	getDoubleValue(): number;
-	setDoubleValue(toSet: number): void;
+  hasDoubleValue(): boolean;
+  clearDoubleValue(): void;
+  getDoubleValue(): number;
+  setDoubleValue(value: number): void;
 
-	hasStringValue(): boolean;
-	getStringValue(): Uint8Array;
-	setStringValue(toSet: Uint8Array): void;
+  hasStringValue(): boolean;
+  clearStringValue(): void;
+  getStringValue(): Uint8Array | string;
+  getStringValue_asU8(): Uint8Array;
+  getStringValue_asB64(): string;
+  setStringValue(value: Uint8Array | string): void;
 
-	hasAggregateValue(): boolean;
-	getAggregateValue(): string;
-	setAggregateValue(toSet: string): void;
+  hasAggregateValue(): boolean;
+  clearAggregateValue(): void;
+  getAggregateValue(): string;
+  setAggregateValue(value: string): void;
 
-	static deserializeBinary(bytes: Uint8Array): UninterpretedOption;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: UninterpretedOption): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: UninterpretedOption, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: UninterpretedOption, reader: jspb.BinaryReader): UninterpretedOption;
-	static deserializeBinary(bytes: Uint8Array): UninterpretedOption;
+  static deserializeBinary(bytes: Uint8Array): UninterpretedOption;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: UninterpretedOption): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: UninterpretedOption, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: UninterpretedOption, reader: jspb.BinaryReader): UninterpretedOption;
 }
 
 export namespace UninterpretedOption {
-		export class NamePart extends jspb.Message {
-		hasNamePart(): boolean;
-		getNamePart(): string;
-		setNamePart(toSet: string): void;
+  export class NamePart extends jspb.Message {
+    hasNamePart(): boolean;
+    clearNamePart(): void;
+    getNamePart(): string;
+    setNamePart(value: string): void;
 
-		hasIsExtension(): boolean;
-		getIsExtension(): boolean;
-		setIsExtension(toSet: boolean): void;
+    hasIsExtension(): boolean;
+    clearIsExtension(): void;
+    getIsExtension(): boolean;
+    setIsExtension(value: boolean): void;
 
-		static deserializeBinary(bytes: Uint8Array): NamePart;
-		serializeBinary(): Uint8Array;
-		toObject(includeInstance?: boolean): Object;
-		static toObject(includeInstance: boolean, msg: NamePart): Object;
-		static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-		static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-		static serializeBinaryToWriter(message: NamePart, writer: jspb.BinaryWriter): void;
-		static deserializeBinaryFromReader(message: NamePart, reader: jspb.BinaryReader): NamePart;
-		static deserializeBinary(bytes: Uint8Array): NamePart;
-	}
-
-	export namespace NamePart {
-	}
-
-
+    static deserializeBinary(bytes: Uint8Array): NamePart;
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Object;
+    static toObject(includeInstance: boolean, msg: NamePart): Object;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: NamePart, writer: jspb.BinaryWriter): void;
+    static deserializeBinaryFromReader(message: NamePart, reader: jspb.BinaryReader): NamePart;
+  }
 }
 
 
 export class SourceCodeInfo extends jspb.Message {
-	getLocationList(): SourceCodeInfo.Location[];
-	addLocation(toAdd: SourceCodeInfo.Location): void;
+  clearLocationList(): void;
+  getLocationList(): Array<SourceCodeInfo.Location>;
+  setLocationList(value: Array<SourceCodeInfo.Location>): void;
+  addLocation(opt_value?: SourceCodeInfo.Location, opt_index?: number): void;
 
-	static deserializeBinary(bytes: Uint8Array): SourceCodeInfo;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: SourceCodeInfo): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: SourceCodeInfo, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: SourceCodeInfo, reader: jspb.BinaryReader): SourceCodeInfo;
-	static deserializeBinary(bytes: Uint8Array): SourceCodeInfo;
+  static deserializeBinary(bytes: Uint8Array): SourceCodeInfo;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: SourceCodeInfo): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: SourceCodeInfo, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: SourceCodeInfo, reader: jspb.BinaryReader): SourceCodeInfo;
 }
 
 export namespace SourceCodeInfo {
-		export class Location extends jspb.Message {
-		getPathList(): number[];
-		addPath(toAdd: number): void;
+  export class Location extends jspb.Message {
+    clearPathList(): void;
+    getPathList(): Array<number>;
+    setPathList(value: Array<number>): void;
+    addPath(value: number, opt_index?: number): void;
 
-		getSpanList(): number[];
-		addSpan(toAdd: number): void;
+    clearSpanList(): void;
+    getSpanList(): Array<number>;
+    setSpanList(value: Array<number>): void;
+    addSpan(value: number, opt_index?: number): void;
 
-		hasLeadingComments(): boolean;
-		getLeadingComments(): string;
-		setLeadingComments(toSet: string): void;
+    hasLeadingComments(): boolean;
+    clearLeadingComments(): void;
+    getLeadingComments(): string;
+    setLeadingComments(value: string): void;
 
-		hasTrailingComments(): boolean;
-		getTrailingComments(): string;
-		setTrailingComments(toSet: string): void;
+    hasTrailingComments(): boolean;
+    clearTrailingComments(): void;
+    getTrailingComments(): string;
+    setTrailingComments(value: string): void;
 
-		getLeadingDetachedCommentsList(): string[];
-		addLeadingDetachedComments(toAdd: string): void;
+    clearLeadingDetachedCommentsList(): void;
+    getLeadingDetachedCommentsList(): Array<string>;
+    setLeadingDetachedCommentsList(value: Array<string>): void;
+    addLeadingDetachedComments(value: string, opt_index?: number): void;
 
-		static deserializeBinary(bytes: Uint8Array): Location;
-		serializeBinary(): Uint8Array;
-		toObject(includeInstance?: boolean): Object;
-		static toObject(includeInstance: boolean, msg: Location): Object;
-		static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-		static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-		static serializeBinaryToWriter(message: Location, writer: jspb.BinaryWriter): void;
-		static deserializeBinaryFromReader(message: Location, reader: jspb.BinaryReader): Location;
-		static deserializeBinary(bytes: Uint8Array): Location;
-	}
-
-	export namespace Location {
-	}
-
-
+    static deserializeBinary(bytes: Uint8Array): Location;
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Object;
+    static toObject(includeInstance: boolean, msg: Location): Object;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Location, writer: jspb.BinaryWriter): void;
+    static deserializeBinaryFromReader(message: Location, reader: jspb.BinaryReader): Location;
+  }
 }
 
 
 export class GeneratedCodeInfo extends jspb.Message {
-	getAnnotationList(): GeneratedCodeInfo.Annotation[];
-	addAnnotation(toAdd: GeneratedCodeInfo.Annotation): void;
+  clearAnnotationList(): void;
+  getAnnotationList(): Array<GeneratedCodeInfo.Annotation>;
+  setAnnotationList(value: Array<GeneratedCodeInfo.Annotation>): void;
+  addAnnotation(opt_value?: GeneratedCodeInfo.Annotation, opt_index?: number): void;
 
-	static deserializeBinary(bytes: Uint8Array): GeneratedCodeInfo;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: GeneratedCodeInfo): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: GeneratedCodeInfo, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: GeneratedCodeInfo, reader: jspb.BinaryReader): GeneratedCodeInfo;
-	static deserializeBinary(bytes: Uint8Array): GeneratedCodeInfo;
+  static deserializeBinary(bytes: Uint8Array): GeneratedCodeInfo;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: GeneratedCodeInfo): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: GeneratedCodeInfo, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: GeneratedCodeInfo, reader: jspb.BinaryReader): GeneratedCodeInfo;
 }
 
 export namespace GeneratedCodeInfo {
-		export class Annotation extends jspb.Message {
-		getPathList(): number[];
-		addPath(toAdd: number): void;
+  export class Annotation extends jspb.Message {
+    clearPathList(): void;
+    getPathList(): Array<number>;
+    setPathList(value: Array<number>): void;
+    addPath(value: number, opt_index?: number): void;
 
-		hasSourceFile(): boolean;
-		getSourceFile(): string;
-		setSourceFile(toSet: string): void;
+    hasSourceFile(): boolean;
+    clearSourceFile(): void;
+    getSourceFile(): string;
+    setSourceFile(value: string): void;
 
-		hasBegin(): boolean;
-		getBegin(): number;
-		setBegin(toSet: number): void;
+    hasBegin(): boolean;
+    clearBegin(): void;
+    getBegin(): number;
+    setBegin(value: number): void;
 
-		hasEnd(): boolean;
-		getEnd(): number;
-		setEnd(toSet: number): void;
+    hasEnd(): boolean;
+    clearEnd(): void;
+    getEnd(): number;
+    setEnd(value: number): void;
 
-		static deserializeBinary(bytes: Uint8Array): Annotation;
-		serializeBinary(): Uint8Array;
-		toObject(includeInstance?: boolean): Object;
-		static toObject(includeInstance: boolean, msg: Annotation): Object;
-		static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-		static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-		static serializeBinaryToWriter(message: Annotation, writer: jspb.BinaryWriter): void;
-		static deserializeBinaryFromReader(message: Annotation, reader: jspb.BinaryReader): Annotation;
-		static deserializeBinary(bytes: Uint8Array): Annotation;
-	}
-
-	export namespace Annotation {
-	}
-
-
+    static deserializeBinary(bytes: Uint8Array): Annotation;
+    serializeBinary(): Uint8Array;
+    toObject(includeInstance?: boolean): Object;
+    static toObject(includeInstance: boolean, msg: Annotation): Object;
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+    static serializeBinaryToWriter(message: Annotation, writer: jspb.BinaryWriter): void;
+    static deserializeBinaryFromReader(message: Annotation, reader: jspb.BinaryReader): Annotation;
+  }
 }
 
 

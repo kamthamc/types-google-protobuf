@@ -2,24 +2,28 @@
 // file: google/protobuf/compiler/plugin.proto
 
 import * as jspb from "google-protobuf";
+import * as google_protobuf_descriptor_pb from "google-protobuf/google/protobuf/descriptor_pb";
 
-import * as google_protobuf_descriptor from "../descriptor_pb";
 export class Version extends jspb.Message {
 	hasMajor(): boolean;
+	clearMajor(): void;
 	getMajor(): number;
-	setMajor(toSet: number): void;
+	setMajor(value: number): void;
 
 	hasMinor(): boolean;
+	clearMinor(): void;
 	getMinor(): number;
-	setMinor(toSet: number): void;
+	setMinor(value: number): void;
 
 	hasPatch(): boolean;
+	clearPatch(): void;
 	getPatch(): number;
-	setPatch(toSet: number): void;
+	setPatch(value: number): void;
 
 	hasSuffix(): boolean;
+	clearSuffix(): void;
 	getSuffix(): string;
-	setSuffix(toSet: string): void;
+	setSuffix(value: string): void;
 
 	static deserializeBinary(bytes: Uint8Array): Version;
 	serializeBinary(): Uint8Array;
@@ -29,27 +33,28 @@ export class Version extends jspb.Message {
 	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
 	static serializeBinaryToWriter(message: Version, writer: jspb.BinaryWriter): void;
 	static deserializeBinaryFromReader(message: Version, reader: jspb.BinaryReader): Version;
-	static deserializeBinary(bytes: Uint8Array): Version;
 }
-
-export namespace Version {
-}
-
 
 export class CodeGeneratorRequest extends jspb.Message {
-	getFileToGenerateList(): string[];
-	addFileToGenerate(toAdd: string): void;
+	clearFileToGenerateList(): void;
+	getFileToGenerateList(): Array<string>;
+	setFileToGenerateList(value: Array<string>): void;
+	addFileToGenerate(value: string, opt_index?: number): void;
 
 	hasParameter(): boolean;
+	clearParameter(): void;
 	getParameter(): string;
-	setParameter(toSet: string): void;
+	setParameter(value: string): void;
 
-	getProtoFileList(): google_protobuf_descriptor.FileDescriptorProto[];
-	addProtoFile(toAdd: google_protobuf_descriptor.FileDescriptorProto): void;
+	clearProtoFileList(): void;
+	getProtoFileList(): Array<google_protobuf_descriptor_pb.FileDescriptorProto>;
+	setProtoFileList(value: Array<google_protobuf_descriptor_pb.FileDescriptorProto>): void;
+	addProtoFile(opt_value?: google_protobuf_descriptor_pb.FileDescriptorProto, opt_index?: number): void;
 
 	hasCompilerVersion(): boolean;
+	clearCompilerVersion(): void;
 	getCompilerVersion(): Version;
-	setCompilerVersion(toSet: Version): void;
+	setCompilerVersion(value: Version): void;
 
 	static deserializeBinary(bytes: Uint8Array): CodeGeneratorRequest;
 	serializeBinary(): Uint8Array;
@@ -59,20 +64,18 @@ export class CodeGeneratorRequest extends jspb.Message {
 	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
 	static serializeBinaryToWriter(message: CodeGeneratorRequest, writer: jspb.BinaryWriter): void;
 	static deserializeBinaryFromReader(message: CodeGeneratorRequest, reader: jspb.BinaryReader): CodeGeneratorRequest;
-	static deserializeBinary(bytes: Uint8Array): CodeGeneratorRequest;
 }
-
-export namespace CodeGeneratorRequest {
-}
-
 
 export class CodeGeneratorResponse extends jspb.Message {
 	hasError(): boolean;
+	clearError(): void;
 	getError(): string;
-	setError(toSet: string): void;
+	setError(value: string): void;
 
-	getFileList(): CodeGeneratorResponse.File[];
-	addFile(toAdd: CodeGeneratorResponse.File): void;
+	clearFileList(): void;
+	getFileList(): Array<CodeGeneratorResponse.File>;
+	setFileList(value: Array<CodeGeneratorResponse.File>): void;
+	addFile(opt_value?: CodeGeneratorResponse.File, opt_index?: number): void;
 
 	static deserializeBinary(bytes: Uint8Array): CodeGeneratorResponse;
 	serializeBinary(): Uint8Array;
@@ -82,22 +85,24 @@ export class CodeGeneratorResponse extends jspb.Message {
 	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
 	static serializeBinaryToWriter(message: CodeGeneratorResponse, writer: jspb.BinaryWriter): void;
 	static deserializeBinaryFromReader(message: CodeGeneratorResponse, reader: jspb.BinaryReader): CodeGeneratorResponse;
-	static deserializeBinary(bytes: Uint8Array): CodeGeneratorResponse;
 }
 
 export namespace CodeGeneratorResponse {
-		export class File extends jspb.Message {
+	export class File extends jspb.Message {
 		hasName(): boolean;
+		clearName(): void;
 		getName(): string;
-		setName(toSet: string): void;
+		setName(value: string): void;
 
 		hasInsertionPoint(): boolean;
+		clearInsertionPoint(): void;
 		getInsertionPoint(): string;
-		setInsertionPoint(toSet: string): void;
+		setInsertionPoint(value: string): void;
 
 		hasContent(): boolean;
+		clearContent(): void;
 		getContent(): string;
-		setContent(toSet: string): void;
+		setContent(value: string): void;
 
 		static deserializeBinary(bytes: Uint8Array): File;
 		serializeBinary(): Uint8Array;
@@ -107,13 +112,7 @@ export namespace CodeGeneratorResponse {
 		static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
 		static serializeBinaryToWriter(message: File, writer: jspb.BinaryWriter): void;
 		static deserializeBinaryFromReader(message: File, reader: jspb.BinaryReader): File;
-		static deserializeBinary(bytes: Uint8Array): File;
 	}
-
-	export namespace File {
-	}
-
-
 }
 
 

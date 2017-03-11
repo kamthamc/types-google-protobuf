@@ -4,84 +4,94 @@
 import * as jspb from "google-protobuf";
 
 export class Struct extends jspb.Message {
-	getFieldsMap(): jspb.Map<string, Value>;
-	clearFieldsMap(): void;
-	static deserializeBinary(bytes: Uint8Array): Struct;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: Struct): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: Struct, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: Struct, reader: jspb.BinaryReader): Struct;
-	static deserializeBinary(bytes: Uint8Array): Struct;
+  getFieldsMap(): jspb.Map<string, Value>;
+  clearFieldsMap(): void;
+  static deserializeBinary(bytes: Uint8Array): Struct;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: Struct): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: Struct, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: Struct, reader: jspb.BinaryReader): Struct;
 }
 
 export namespace Struct {
-	
 }
 
 
 export class Value extends jspb.Message {
-	hasNullValue(): boolean;
-	getNullValue(): NullValue;
-	setNullValue(toSet: NullValue): void;
+  hasNullValue(): boolean;
+  clearNullValue(): void;
+  getNullValue(): NullValue;
+  setNullValue(value: NullValue): void;
 
-	hasNumberValue(): boolean;
-	getNumberValue(): number;
-	setNumberValue(toSet: number): void;
+  hasNumberValue(): boolean;
+  clearNumberValue(): void;
+  getNumberValue(): number;
+  setNumberValue(value: number): void;
 
-	hasStringValue(): boolean;
-	getStringValue(): string;
-	setStringValue(toSet: string): void;
+  hasStringValue(): boolean;
+  clearStringValue(): void;
+  getStringValue(): string;
+  setStringValue(value: string): void;
 
-	hasBoolValue(): boolean;
-	getBoolValue(): boolean;
-	setBoolValue(toSet: boolean): void;
+  hasBoolValue(): boolean;
+  clearBoolValue(): void;
+  getBoolValue(): boolean;
+  setBoolValue(value: boolean): void;
 
-	hasStructValue(): boolean;
-	getStructValue(): Struct;
-	setStructValue(toSet: Struct): void;
+  hasStructValue(): boolean;
+  clearStructValue(): void;
+  getStructValue(): Struct;
+  setStructValue(value: Struct): void;
 
-	hasListValue(): boolean;
-	getListValue(): ListValue;
-	setListValue(toSet: ListValue): void;
+  hasListValue(): boolean;
+  clearListValue(): void;
+  getListValue(): ListValue;
+  setListValue(value: ListValue): void;
 
-	static deserializeBinary(bytes: Uint8Array): Value;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: Value): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: Value, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: Value, reader: jspb.BinaryReader): Value;
-	static deserializeBinary(bytes: Uint8Array): Value;
+  getKindCase(): Value.KindCase;
+  static deserializeBinary(bytes: Uint8Array): Value;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: Value): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: Value, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: Value, reader: jspb.BinaryReader): Value;
 }
 
 export namespace Value {
+  export enum KindCase {
+    KIND_NOT_SET = 0,
+    NULL_VALUE = 1,
+    NUMBER_VALUE = 2,
+    STRING_VALUE = 3,
+    BOOL_VALUE = 4,
+    STRUCT_VALUE = 5,
+    LIST_VALUE = 6,
+  }
 }
 
 
 export class ListValue extends jspb.Message {
-	getValuesList(): Value[];
-	addValues(toAdd: Value): void;
+  clearValuesList(): void;
+  getValuesList(): Array<Value>;
+  setValuesList(value: Array<Value>): void;
+  addValues(opt_value?: Value, opt_index?: number): void;
 
-	static deserializeBinary(bytes: Uint8Array): ListValue;
-	serializeBinary(): Uint8Array;
-	toObject(includeInstance?: boolean): Object;
-	static toObject(includeInstance: boolean, msg: ListValue): Object;
-	static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
-	static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
-	static serializeBinaryToWriter(message: ListValue, writer: jspb.BinaryWriter): void;
-	static deserializeBinaryFromReader(message: ListValue, reader: jspb.BinaryReader): ListValue;
-	static deserializeBinary(bytes: Uint8Array): ListValue;
+  static deserializeBinary(bytes: Uint8Array): ListValue;
+  serializeBinary(): Uint8Array;
+  toObject(includeInstance?: boolean): Object;
+  static toObject(includeInstance: boolean, msg: ListValue): Object;
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
+  static serializeBinaryToWriter(message: ListValue, writer: jspb.BinaryWriter): void;
+  static deserializeBinaryFromReader(message: ListValue, reader: jspb.BinaryReader): ListValue;
 }
-
-export namespace ListValue {
-}
-
 
 export enum NullValue {
-	NULL_VALUE = 0,
+  NULL_VALUE = 0,
 }
 
