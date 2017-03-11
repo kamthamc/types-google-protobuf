@@ -1,7 +1,4 @@
-// package: google.protobuf
-// file: google/protobuf/timestamp.proto
-
-import * as jspb from "google-protobuf";
+import * as jspb from "../../index";
 
 export class Timestamp extends jspb.Message {
   getSeconds(): number;
@@ -22,4 +19,3 @@ export class Timestamp extends jspb.Message {
   static serializeBinaryToWriter(message: Timestamp, writer: jspb.BinaryWriter): void;
   static deserializeBinaryFromReader(message: Timestamp, reader: jspb.BinaryReader): Timestamp;
 }
-

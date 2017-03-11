@@ -1,7 +1,4 @@
-// package: google.protobuf
-// file: google/protobuf/source_context.proto
-
-import * as jspb from "google-protobuf";
+import * as jspb from "../../index";
 
 export class SourceContext extends jspb.Message {
   getFileName(): string;
@@ -16,4 +13,3 @@ export class SourceContext extends jspb.Message {
   static serializeBinaryToWriter(message: SourceContext, writer: jspb.BinaryWriter): void;
   static deserializeBinaryFromReader(message: SourceContext, reader: jspb.BinaryReader): SourceContext;
 }
-

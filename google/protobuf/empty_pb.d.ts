@@ -1,7 +1,4 @@
-// package: google.protobuf
-// file: google/protobuf/empty.proto
-
-import * as jspb from "google-protobuf";
+import * as jspb from "../../index";
 
 export class Empty extends jspb.Message {
   static deserializeBinary(bytes: Uint8Array): Empty;
@@ -13,4 +10,3 @@ export class Empty extends jspb.Message {
   static serializeBinaryToWriter(message: Empty, writer: jspb.BinaryWriter): void;
   static deserializeBinaryFromReader(message: Empty, reader: jspb.BinaryReader): Empty;
 }
-

@@ -1,7 +1,4 @@
-// package: google.protobuf
-// file: google/protobuf/descriptor.proto
-
-import * as jspb from "google-protobuf";
+import * as jspb from "../../index";
 
 export class FileDescriptorSet extends jspb.Message {
   clearFileList(): void;
@@ -915,5 +912,3 @@ export namespace GeneratedCodeInfo {
     static deserializeBinaryFromReader(message: Annotation, reader: jspb.BinaryReader): Annotation;
   }
 }
-
-

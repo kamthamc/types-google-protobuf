@@ -1,9 +1,6 @@
-// package: google.protobuf
-// file: google/protobuf/api.proto
-
-import * as jspb from "google-protobuf";
-import * as google_protobuf_source_context_pb from "google-protobuf/google/protobuf/source_context_pb";
-import * as google_protobuf_type_pb from "google-protobuf/google/protobuf/type_pb";
+import * as jspb from "../../index";
+import * as google_protobuf_source_context_pb from "./source_context_pb";
+import * as google_protobuf_type_pb from "./type_pb";
 
 export class Api extends jspb.Message {
   getName(): string;
@@ -93,4 +90,3 @@ export class Mixin extends jspb.Message {
   static serializeBinaryToWriter(message: Mixin, writer: jspb.BinaryWriter): void;
   static deserializeBinaryFromReader(message: Mixin, reader: jspb.BinaryReader): Mixin;
 }
-

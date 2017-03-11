@@ -1,7 +1,4 @@
-// package: google.protobuf
-// file: google/protobuf/field_mask.proto
-
-import * as jspb from "google-protobuf";
+import * as jspb from "../../index";
 
 export class FieldMask extends jspb.Message {
   clearPathsList(): void;
@@ -18,4 +15,3 @@ export class FieldMask extends jspb.Message {
   static serializeBinaryToWriter(message: FieldMask, writer: jspb.BinaryWriter): void;
   static deserializeBinaryFromReader(message: FieldMask, reader: jspb.BinaryReader): FieldMask;
 }
-

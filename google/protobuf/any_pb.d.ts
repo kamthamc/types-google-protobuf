@@ -1,7 +1,4 @@
-// package: google.protobuf
-// file: google/protobuf/any.proto
-
-import * as jspb from "google-protobuf";
+import * as jspb from "../../index";
 
 export class Any extends jspb.Message {
   getTypeUrl(): string;
@@ -25,4 +22,3 @@ export class Any extends jspb.Message {
   static serializeBinaryToWriter(message: Any, writer: jspb.BinaryWriter): void;
   static deserializeBinaryFromReader(message: Any, reader: jspb.BinaryReader): Any;
 }
-

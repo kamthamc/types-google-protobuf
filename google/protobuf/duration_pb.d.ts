@@ -1,7 +1,4 @@
-// package: google.protobuf
-// file: google/protobuf/duration.proto
-
-import * as jspb from "google-protobuf";
+import * as jspb from "../../index";
 
 export class Duration extends jspb.Message {
   getSeconds(): number;
@@ -19,4 +16,3 @@ export class Duration extends jspb.Message {
   static serializeBinaryToWriter(message: Duration, writer: jspb.BinaryWriter): void;
   static deserializeBinaryFromReader(message: Duration, reader: jspb.BinaryReader): Duration;
 }
-

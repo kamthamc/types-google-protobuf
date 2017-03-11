@@ -1,7 +1,4 @@
-// package: google.protobuf
-// file: google/protobuf/struct.proto
-
-import * as jspb from "google-protobuf";
+import * as jspb from "../../index";
 
 export class Struct extends jspb.Message {
   getFieldsMap(): jspb.Map<string, Value>;
@@ -19,10 +16,6 @@ export class Struct extends jspb.Message {
   static serializeBinaryToWriter(message: Struct, writer: jspb.BinaryWriter): void;
   static deserializeBinaryFromReader(message: Struct, reader: jspb.BinaryReader): Struct;
 }
-
-export namespace Struct {
-}
-
 
 export class Value extends jspb.Message {
   hasNullValue(): boolean;
@@ -55,10 +48,11 @@ export class Value extends jspb.Message {
   getListValue(): ListValue;
   setListValue(value: ListValue): void;
 
+  getKindCase(): Value.KindCase;
+
   toJavaScript(): JavaScriptValue;
   static fromJavaScript(value: JavaScriptValue): Value;
 
-  getKindCase(): Value.KindCase;
   static deserializeBinary(bytes: Uint8Array): Value;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Object;
@@ -80,7 +74,6 @@ export namespace Value {
     LIST_VALUE = 6,
   }
 }
-
 
 export class ListValue extends jspb.Message {
   clearValuesList(): void;

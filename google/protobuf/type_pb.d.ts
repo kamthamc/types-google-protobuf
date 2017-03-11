@@ -1,9 +1,6 @@
-// package: google.protobuf
-// file: google/protobuf/type.proto
-
-import * as jspb from "google-protobuf";
-import * as google_protobuf_any_pb from "google-protobuf/google/protobuf/any_pb";
-import * as google_protobuf_source_context_pb from "google-protobuf/google/protobuf/source_context_pb";
+import * as jspb from "../../index";
+import * as google_protobuf_any_pb from "./any_pb";
+import * as google_protobuf_source_context_pb from "./source_context_pb";
 
 export class Type extends jspb.Message {
   getName(): string;
@@ -113,7 +110,6 @@ export namespace Field {
   }
 }
 
-
 export class Enum extends jspb.Message {
   getName(): string;
   setName(value: string): void;
@@ -187,4 +183,3 @@ export enum Syntax {
   SYNTAX_PROTO2 = 0,
   SYNTAX_PROTO3 = 1,
 }
-

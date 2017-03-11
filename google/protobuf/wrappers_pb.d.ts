@@ -1,7 +1,4 @@
-// package: google.protobuf
-// file: google/protobuf/wrappers.proto
-
-import * as jspb from "google-protobuf";
+import * as jspb from "../../index";
 
 export class DoubleValue extends jspb.Message {
   getValue(): number;
@@ -130,4 +127,3 @@ export class BytesValue extends jspb.Message {
   static serializeBinaryToWriter(message: BytesValue, writer: jspb.BinaryWriter): void;
   static deserializeBinaryFromReader(message: BytesValue, reader: jspb.BinaryReader): BytesValue;
 }
-
