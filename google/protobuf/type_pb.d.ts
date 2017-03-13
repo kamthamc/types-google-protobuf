@@ -9,31 +9,33 @@ export class Type extends jspb.Message {
   clearFieldsList(): void;
   getFieldsList(): Array<Field>;
   setFieldsList(value: Array<Field>): void;
-  addFields(opt_value?: Field, opt_index?: number): void;
+  addFields(value?: Field, index?: number): void;
 
   clearOneofsList(): void;
   getOneofsList(): Array<string>;
   setOneofsList(value: Array<string>): void;
-  addOneofs(value: string, opt_index?: number): void;
+  addOneofs(value: string, index?: number): void;
 
   clearOptionsList(): void;
   getOptionsList(): Array<Option>;
   setOptionsList(value: Array<Option>): void;
-  addOptions(opt_value?: Option, opt_index?: number): void;
+  addOptions(value?: Option, index?: number): void;
 
+  hasSourceContext(): boolean;
+  clearSourceContext(): void;
   getSourceContext(): google_protobuf_source_context_pb.SourceContext;
   setSourceContext(value: google_protobuf_source_context_pb.SourceContext): void;
 
   getSyntax(): Syntax;
   setSyntax(value: Syntax): void;
 
-  static deserializeBinary(bytes: Uint8Array): Type;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Object;
   static toObject(includeInstance: boolean, msg: Type): Object;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Type, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Type;
   static deserializeBinaryFromReader(message: Type, reader: jspb.BinaryReader): Type;
 }
 
@@ -62,7 +64,7 @@ export class Field extends jspb.Message {
   clearOptionsList(): void;
   getOptionsList(): Array<Option>;
   setOptionsList(value: Array<Option>): void;
-  addOptions(opt_value?: Option, opt_index?: number): void;
+  addOptions(value?: Option, index?: number): void;
 
   getJsonName(): string;
   setJsonName(value: string): void;
@@ -70,13 +72,13 @@ export class Field extends jspb.Message {
   getDefaultValue(): string;
   setDefaultValue(value: string): void;
 
-  static deserializeBinary(bytes: Uint8Array): Field;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Object;
   static toObject(includeInstance: boolean, msg: Field): Object;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Field, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Field;
   static deserializeBinaryFromReader(message: Field, reader: jspb.BinaryReader): Field;
 }
 
@@ -117,26 +119,28 @@ export class Enum extends jspb.Message {
   clearEnumvalueList(): void;
   getEnumvalueList(): Array<EnumValue>;
   setEnumvalueList(value: Array<EnumValue>): void;
-  addEnumvalue(opt_value?: EnumValue, opt_index?: number): void;
+  addEnumvalue(value?: EnumValue, index?: number): void;
 
   clearOptionsList(): void;
   getOptionsList(): Array<Option>;
   setOptionsList(value: Array<Option>): void;
-  addOptions(opt_value?: Option, opt_index?: number): void;
+  addOptions(value?: Option, index?: number): void;
 
+  hasSourceContext(): boolean;
+  clearSourceContext(): void;
   getSourceContext(): google_protobuf_source_context_pb.SourceContext;
   setSourceContext(value: google_protobuf_source_context_pb.SourceContext): void;
 
   getSyntax(): Syntax;
   setSyntax(value: Syntax): void;
 
-  static deserializeBinary(bytes: Uint8Array): Enum;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Object;
   static toObject(includeInstance: boolean, msg: Enum): Object;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Enum, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Enum;
   static deserializeBinaryFromReader(message: Enum, reader: jspb.BinaryReader): Enum;
 }
 
@@ -150,15 +154,15 @@ export class EnumValue extends jspb.Message {
   clearOptionsList(): void;
   getOptionsList(): Array<Option>;
   setOptionsList(value: Array<Option>): void;
-  addOptions(opt_value?: Option, opt_index?: number): void;
+  addOptions(value?: Option, index?: number): void;
 
-  static deserializeBinary(bytes: Uint8Array): EnumValue;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Object;
   static toObject(includeInstance: boolean, msg: EnumValue): Object;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: EnumValue, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): EnumValue;
   static deserializeBinaryFromReader(message: EnumValue, reader: jspb.BinaryReader): EnumValue;
 }
 
@@ -166,16 +170,18 @@ export class Option extends jspb.Message {
   getName(): string;
   setName(value: string): void;
 
+  hasValue(): boolean;
+  clearValue(): void;
   getValue(): google_protobuf_any_pb.Any;
   setValue(value: google_protobuf_any_pb.Any): void;
 
-  static deserializeBinary(bytes: Uint8Array): Option;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Object;
   static toObject(includeInstance: boolean, msg: Option): Object;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Option, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Option;
   static deserializeBinaryFromReader(message: Option, reader: jspb.BinaryReader): Option;
 }
 

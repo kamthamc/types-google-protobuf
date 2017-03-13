@@ -13,12 +13,12 @@ export class Any extends jspb.Message {
   pack(serialized: Uint8Array, name: string, typeUrlPrefix?: string);
   unpack<T extends jspb.Message>(deserialize: (packed: Uint8Array) => T, name: string): T | null;
 
-  static deserializeBinary(bytes: Uint8Array): Any;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Object;
   static toObject(includeInstance: boolean, msg: Any): Object;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Any, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Any;
   static deserializeBinaryFromReader(message: Any, reader: jspb.BinaryReader): Any;
 }

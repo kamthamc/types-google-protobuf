@@ -7,13 +7,13 @@ export class Struct extends jspb.Message {
   toJavaScript(): {[key: string]: JavaScriptValue};
   static fromJavaScript(value: {[key: string]: JavaScriptValue}): Struct;
 
-  static deserializeBinary(bytes: Uint8Array): Struct;
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Object;
   static toObject(includeInstance: boolean, msg: Struct): Object;
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Struct, writer: jspb.BinaryWriter): void;
+  static deserializeBinary(bytes: Uint8Array): Struct;
   static deserializeBinaryFromReader(message: Struct, reader: jspb.BinaryReader): Struct;
 }
 
@@ -79,7 +79,7 @@ export class ListValue extends jspb.Message {
   clearValuesList(): void;
   getValuesList(): Array<Value>;
   setValuesList(value: Array<Value>): void;
-  addValues(opt_value?: Value, opt_index?: number): void;
+  addValues(value?: Value, index?: number): void;
 
   toJavaScript(): Array<JavaScriptValue>;
   static fromJavaScript(value: Array<JavaScriptValue>): ListValue;
