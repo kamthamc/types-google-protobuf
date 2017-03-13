@@ -98,4 +98,4 @@ export enum NullValue {
   NULL_VALUE = 0,
 }
 
-export JavaScriptValue = null | number | string | boolean | Array | {};
+export type JavaScriptValue = null | number | string | boolean | Array<any> | {};
