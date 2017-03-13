@@ -24,8 +24,8 @@ export class Version extends jspb.Message {
 
   static deserializeBinary(bytes: Uint8Array): Version;
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Object;
-  static toObject(includeInstance: boolean, msg: Version): Object;
+  toObject(includeInstance?: boolean): {};
+  static toObject(includeInstance: boolean, msg: Version): {};
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Version, writer: jspb.BinaryWriter): void;
@@ -55,8 +55,8 @@ export class CodeGeneratorRequest extends jspb.Message {
 
   static deserializeBinary(bytes: Uint8Array): CodeGeneratorRequest;
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Object;
-  static toObject(includeInstance: boolean, msg: CodeGeneratorRequest): Object;
+  toObject(includeInstance?: boolean): {};
+  static toObject(includeInstance: boolean, msg: CodeGeneratorRequest): {};
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: CodeGeneratorRequest, writer: jspb.BinaryWriter): void;
@@ -76,8 +76,8 @@ export class CodeGeneratorResponse extends jspb.Message {
 
   static deserializeBinary(bytes: Uint8Array): CodeGeneratorResponse;
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Object;
-  static toObject(includeInstance: boolean, msg: CodeGeneratorResponse): Object;
+  toObject(includeInstance?: boolean): {};
+  static toObject(includeInstance: boolean, msg: CodeGeneratorResponse): {};
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: CodeGeneratorResponse, writer: jspb.BinaryWriter): void;
@@ -103,8 +103,8 @@ export namespace CodeGeneratorResponse {
 
    static deserializeBinary(bytes: Uint8Array): File;
    serializeBinary(): Uint8Array;
-   toObject(includeInstance?: boolean): Object;
-   static toObject(includeInstance: boolean, msg: File): Object;
+   toObject(includeInstance?: boolean): {};
+   static toObject(includeInstance: boolean, msg: File): {};
    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
    static serializeBinaryToWriter(message: File, writer: jspb.BinaryWriter): void;

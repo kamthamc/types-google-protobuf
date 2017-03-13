@@ -30,8 +30,8 @@ export class Type extends jspb.Message {
   setSyntax(value: Syntax): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Object;
-  static toObject(includeInstance: boolean, msg: Type): Object;
+  toObject(includeInstance?: boolean): {};
+  static toObject(includeInstance: boolean, msg: Type): {};
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Type, writer: jspb.BinaryWriter): void;
@@ -73,8 +73,8 @@ export class Field extends jspb.Message {
   setDefaultValue(value: string): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Object;
-  static toObject(includeInstance: boolean, msg: Field): Object;
+  toObject(includeInstance?: boolean): {};
+  static toObject(includeInstance: boolean, msg: Field): {};
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Field, writer: jspb.BinaryWriter): void;
@@ -135,8 +135,8 @@ export class Enum extends jspb.Message {
   setSyntax(value: Syntax): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Object;
-  static toObject(includeInstance: boolean, msg: Enum): Object;
+  toObject(includeInstance?: boolean): {};
+  static toObject(includeInstance: boolean, msg: Enum): {};
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Enum, writer: jspb.BinaryWriter): void;
@@ -157,8 +157,8 @@ export class EnumValue extends jspb.Message {
   addOptions(value?: Option, index?: number): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Object;
-  static toObject(includeInstance: boolean, msg: EnumValue): Object;
+  toObject(includeInstance?: boolean): {};
+  static toObject(includeInstance: boolean, msg: EnumValue): {};
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: EnumValue, writer: jspb.BinaryWriter): void;
@@ -176,8 +176,8 @@ export class Option extends jspb.Message {
   setValue(value: google_protobuf_any_pb.Any): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Object;
-  static toObject(includeInstance: boolean, msg: Option): Object;
+  toObject(includeInstance?: boolean): {};
+  static toObject(includeInstance: boolean, msg: Option): {};
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Option, writer: jspb.BinaryWriter): void;

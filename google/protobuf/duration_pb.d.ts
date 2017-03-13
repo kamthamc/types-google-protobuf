@@ -8,8 +8,8 @@ export class Duration extends jspb.Message {
   setNanos(value: number): void;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Object;
-  static toObject(includeInstance: boolean, msg: Duration): Object;
+  toObject(includeInstance?: boolean): {};
+  static toObject(includeInstance: boolean, msg: Duration): {};
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Duration, writer: jspb.BinaryWriter): void;

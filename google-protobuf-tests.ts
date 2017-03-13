@@ -1,17 +1,17 @@
 import * as jspb from "google-protobuf";
 
-import "google/protobuf/compiler/plugin_pb";
-import "google/protobuf/any_pb";
-import "google/protobuf/api_pb";
-import "google/protobuf/descriptor_pb";
-import "google/protobuf/duration_pb";
-import "google/protobuf/empty_pb";
-import "google/protobuf/field_mask_pb";
-import "google/protobuf/source_context_pb";
-import "google/protobuf/struct_pb";
-import "google/protobuf/timestamp_pb";
-import "google/protobuf/type_pb";
-import "google/protobuf/wrappers_pb";
+import * as plugin_pb from "google/protobuf/compiler/plugin_pb";
+import * as any_pb from "google/protobuf/any_pb";
+import * as api_pb from "google/protobuf/api_pb";
+import * as descriptor_pb from "google/protobuf/descriptor_pb";
+import * as duration_pb from "google/protobuf/duration_pb";
+import * as empty_pb from "google/protobuf/empty_pb";
+import * as field_mask_pb from "google/protobuf/field_mask_pb";
+import * as source_context_pb from "google/protobuf/source_context_pb";
+import * as struct_pb from "google/protobuf/struct_pb";
+import * as timestamp_pb from "google/protobuf/timestamp_pb";
+import * as type_pb from "google/protobuf/type_pb";
+import * as wrappers_pb from "google/protobuf/wrappers_pb";
 
 /* This is a typescript version of a simple generated class from a proto file that is shown below. In order to make
  this ES5 JS file into TypeScript there have been quite a few modifications, but the same calls are made to the library

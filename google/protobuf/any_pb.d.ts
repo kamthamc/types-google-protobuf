@@ -14,8 +14,8 @@ export class Any extends jspb.Message {
   unpack<T extends jspb.Message>(deserialize: (packed: Uint8Array) => T, name: string): T | null;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Object;
-  static toObject(includeInstance: boolean, msg: Any): Object;
+  toObject(includeInstance?: boolean): {};
+  static toObject(includeInstance: boolean, msg: Any): {};
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Any, writer: jspb.BinaryWriter): void;

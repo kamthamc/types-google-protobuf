@@ -8,8 +8,8 @@ export class Struct extends jspb.Message {
   static fromJavaScript(value: {[key: string]: JavaScriptValue}): Struct;
 
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Object;
-  static toObject(includeInstance: boolean, msg: Struct): Object;
+  toObject(includeInstance?: boolean): {};
+  static toObject(includeInstance: boolean, msg: Struct): {};
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Struct, writer: jspb.BinaryWriter): void;
@@ -55,8 +55,8 @@ export class Value extends jspb.Message {
 
   static deserializeBinary(bytes: Uint8Array): Value;
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Object;
-  static toObject(includeInstance: boolean, msg: Value): Object;
+  toObject(includeInstance?: boolean): {};
+  static toObject(includeInstance: boolean, msg: Value): {};
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Value, writer: jspb.BinaryWriter): void;
@@ -86,8 +86,8 @@ export class ListValue extends jspb.Message {
 
   static deserializeBinary(bytes: Uint8Array): ListValue;
   serializeBinary(): Uint8Array;
-  toObject(includeInstance?: boolean): Object;
-  static toObject(includeInstance: boolean, msg: ListValue): Object;
+  toObject(includeInstance?: boolean): {};
+  static toObject(includeInstance: boolean, msg: ListValue): {};
   static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
   static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: ListValue, writer: jspb.BinaryWriter): void;
@@ -98,4 +98,4 @@ export enum NullValue {
   NULL_VALUE = 0,
 }
 
-export JavaScriptValue = null|number|string|boolean|Array|{};
+export JavaScriptValue = null | number | string | boolean | Array | {};
