@@ -4,7 +4,7 @@
   "types": "index.d.ts",
   "scripts": {
     "lint": "tslint --fix *.d.ts *.ts",
-    "dist": "rm -rf dist && mkdir -p dist && cp index.d.ts dist/ && cp google-protobuf-tests.ts dist/ && cp tsconfig.json dist/ && cp dt-tslint.json dist/tslint.json"
+    "dist": "rm -rf dist && mkdir -p dist/google && cp index.d.ts dist/ && cp -R google/ dist/google && cp google-protobuf-tests.ts dist/ && cp tsconfig.json dist/ && cp dt-tslint.json dist/tslint.json"
   },
   "author": "Marcus Longmuir",
   "license": "MIT",
