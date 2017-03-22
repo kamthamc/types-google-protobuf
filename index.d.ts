@@ -172,7 +172,7 @@ export class Map<K, V> {
               valueCtor?: {new(init: any): V});
   toArray(): Array<[K, V]>;
   toObject(includeInstance: boolean,
-           valueToObject: (includeInstance: boolean) => any): Array<[K, V]>;
+           valueToObject?: (includeInstance: boolean, valueWrapper: V) => any): Array<[K, V]>;
   static fromObject<K, V>(entries: Array<[K, V]>,
                           valueCtor: any,
                           valueFromObject: any): Map<K, V>;
@@ -186,7 +186,7 @@ export class Map<K, V> {
                      key: K) => void,
           thisArg?: {}): void;
   set(key: K,
-      value: V): void;
+      value: V): this;
   get(key: K): (V | undefined);
   has(key: K): boolean;
 }
