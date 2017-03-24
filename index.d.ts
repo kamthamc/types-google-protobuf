@@ -171,11 +171,12 @@ export class Map<K, V> {
   constructor(arr: Array<[K, V]>,
               valueCtor?: {new(init: any): V});
   toArray(): Array<[K, V]>;
-  toObject(includeInstance: boolean,
-           valueToObject?: (includeInstance: boolean, valueWrapper: V) => any): Array<[K, V]>;
-  static fromObject<K, V>(entries: Array<[K, V]>,
-                          valueCtor: any,
-                          valueFromObject: any): Map<K, V>;
+  toObject(includeInstance?: boolean): Array<[K, V]>;
+  toObject<VO>(includeInstance: boolean,
+               valueToObject?: (includeInstance: boolean, valueWrapper: V) => VO): Array<[K, VO]>;
+  static fromObject<TK, TV>(entries: Array<[TK, TV]>,
+                            valueCtor: any,
+                            valueFromObject: any): Map<TK, TV>;
   getLength(): number;
   clear(): void;
   del(key: K): boolean;
