@@ -173,7 +173,7 @@ export class Map<K, V> {
   toObject(includeInstance?: boolean): Array<[K, V]>;
   toObject<VO>(
     includeInstance: boolean,
-    valueToObject?: (includeInstance: boolean, valueWrapper: V) => VO): Array<[K, VO]>;
+    valueToObject: (includeInstance: boolean, valueWrapper: V) => VO): Array<[K, VO]>;
   static fromObject<TK, TV>(
     entries: Array<[TK, TV]>,
     valueCtor: any,
