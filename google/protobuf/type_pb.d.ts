@@ -23,8 +23,8 @@ export class Type extends jspb.Message {
 
   hasSourceContext(): boolean;
   clearSourceContext(): void;
-  getSourceContext(): google_protobuf_source_context_pb.SourceContext;
-  setSourceContext(value: google_protobuf_source_context_pb.SourceContext): void;
+  getSourceContext(): google_protobuf_source_context_pb.SourceContext | undefined;
+  setSourceContext(value: google_protobuf_source_context_pb.SourceContext | undefined): void;
 
   getSyntax(): Syntax;
   setSyntax(value: Syntax): void;
@@ -152,8 +152,8 @@ export class Enum extends jspb.Message {
 
   hasSourceContext(): boolean;
   clearSourceContext(): void;
-  getSourceContext(): google_protobuf_source_context_pb.SourceContext;
-  setSourceContext(value: google_protobuf_source_context_pb.SourceContext): void;
+  getSourceContext(): google_protobuf_source_context_pb.SourceContext | undefined;
+  setSourceContext(value: google_protobuf_source_context_pb.SourceContext | undefined): void;
 
   getSyntax(): Syntax;
   setSyntax(value: Syntax): void;
@@ -214,8 +214,8 @@ export class Option extends jspb.Message {
 
   hasValue(): boolean;
   clearValue(): void;
-  getValue(): google_protobuf_any_pb.Any;
-  setValue(value: google_protobuf_any_pb.Any): void;
+  getValue(): google_protobuf_any_pb.Any | undefined;
+  setValue(value: google_protobuf_any_pb.Any | undefined): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Option.AsObject;

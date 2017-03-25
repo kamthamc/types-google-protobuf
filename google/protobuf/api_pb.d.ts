@@ -21,8 +21,8 @@ export class Api extends jspb.Message {
 
   hasSourceContext(): boolean;
   clearSourceContext(): void;
-  getSourceContext(): google_protobuf_source_context_pb.SourceContext;
-  setSourceContext(value: google_protobuf_source_context_pb.SourceContext): void;
+  getSourceContext(): google_protobuf_source_context_pb.SourceContext | undefined;
+  setSourceContext(value: google_protobuf_source_context_pb.SourceContext | undefined): void;
 
   clearMixinsList(): void;
   getMixinsList(): Array<Mixin>;

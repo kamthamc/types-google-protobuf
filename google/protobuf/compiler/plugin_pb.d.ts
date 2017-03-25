@@ -60,7 +60,7 @@ export class CodeGeneratorRequest extends jspb.Message {
   hasCompilerVersion(): boolean;
   clearCompilerVersion(): void;
   getCompilerVersion(): Version;
-  setCompilerVersion(value: Version): void;
+  setCompilerVersion(value: Version | undefined): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CodeGeneratorRequest.AsObject;

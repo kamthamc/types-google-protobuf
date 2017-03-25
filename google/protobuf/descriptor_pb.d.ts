@@ -71,12 +71,12 @@ export class FileDescriptorProto extends jspb.Message {
   hasOptions(): boolean;
   clearOptions(): void;
   getOptions(): FileOptions;
-  setOptions(value: FileOptions): void;
+  setOptions(value: FileOptions | undefined): void;
 
   hasSourceCodeInfo(): boolean;
   clearSourceCodeInfo(): void;
   getSourceCodeInfo(): SourceCodeInfo;
-  setSourceCodeInfo(value: SourceCodeInfo): void;
+  setSourceCodeInfo(value: SourceCodeInfo | undefined): void;
 
   hasSyntax(): boolean;
   clearSyntax(): void;
@@ -149,7 +149,7 @@ export class DescriptorProto extends jspb.Message {
   hasOptions(): boolean;
   clearOptions(): void;
   getOptions(): MessageOptions;
-  setOptions(value: MessageOptions): void;
+  setOptions(value: MessageOptions | undefined): void;
 
   clearReservedRangeList(): void;
   getReservedRangeList(): Array<DescriptorProto.ReservedRange>;
@@ -291,7 +291,7 @@ export class FieldDescriptorProto extends jspb.Message {
   hasOptions(): boolean;
   clearOptions(): void;
   getOptions(): FieldOptions;
-  setOptions(value: FieldOptions): void;
+  setOptions(value: FieldOptions | undefined): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): FieldDescriptorProto.AsObject;
@@ -353,7 +353,7 @@ export class OneofDescriptorProto extends jspb.Message {
   hasOptions(): boolean;
   clearOptions(): void;
   getOptions(): OneofOptions;
-  setOptions(value: OneofOptions): void;
+  setOptions(value: OneofOptions | undefined): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): OneofDescriptorProto.AsObject;
@@ -386,7 +386,7 @@ export class EnumDescriptorProto extends jspb.Message {
   hasOptions(): boolean;
   clearOptions(): void;
   getOptions(): EnumOptions;
-  setOptions(value: EnumOptions): void;
+  setOptions(value: EnumOptions | undefined): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): EnumDescriptorProto.AsObject;
@@ -420,7 +420,7 @@ export class EnumValueDescriptorProto extends jspb.Message {
   hasOptions(): boolean;
   clearOptions(): void;
   getOptions(): EnumValueOptions;
-  setOptions(value: EnumValueOptions): void;
+  setOptions(value: EnumValueOptions | undefined): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): EnumValueDescriptorProto.AsObject;
@@ -454,7 +454,7 @@ export class ServiceDescriptorProto extends jspb.Message {
   hasOptions(): boolean;
   clearOptions(): void;
   getOptions(): ServiceOptions;
-  setOptions(value: ServiceOptions): void;
+  setOptions(value: ServiceOptions | undefined): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): ServiceDescriptorProto.AsObject;
@@ -493,7 +493,7 @@ export class MethodDescriptorProto extends jspb.Message {
   hasOptions(): boolean;
   clearOptions(): void;
   getOptions(): MethodOptions;
-  setOptions(value: MethodOptions): void;
+  setOptions(value: MethodOptions | undefined): void;
 
   hasClientStreaming(): boolean;
   clearClientStreaming(): void;
