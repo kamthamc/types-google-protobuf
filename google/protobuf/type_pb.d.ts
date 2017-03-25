@@ -32,8 +32,8 @@ export class Type extends jspb.Message {
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Type.AsObject;
   static toObject(includeInstance: boolean, msg: Type): Type.AsObject;
-  static extensions: { [key: number]: jspb.ExtensionFieldInfo<jspb.Message> };
-  static extensionsBinary: { [key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message> };
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Type, writer: jspb.BinaryWriter): void;
   static deserializeBinary(bytes: Uint8Array): Type;
   static deserializeBinaryFromReader(message: Type, reader: jspb.BinaryReader): Type;
@@ -47,7 +47,7 @@ export namespace Type {
     optionsList: Array<Option.AsObject>,
     sourceContext: google_protobuf_source_context_pb.SourceContext.AsObject,
     syntax: Syntax,
-  };
+  }
 }
 
 export class Field extends jspb.Message {
@@ -86,8 +86,8 @@ export class Field extends jspb.Message {
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Field.AsObject;
   static toObject(includeInstance: boolean, msg: Field): Field.AsObject;
-  static extensions: { [key: number]: jspb.ExtensionFieldInfo<jspb.Message> };
-  static extensionsBinary: { [key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message> };
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Field, writer: jspb.BinaryWriter): void;
   static deserializeBinary(bytes: Uint8Array): Field;
   static deserializeBinaryFromReader(message: Field, reader: jspb.BinaryReader): Field;
@@ -105,8 +105,7 @@ export namespace Field {
     optionsList: Array<Option.AsObject>,
     jsonName: string,
     defaultValue: string,
-  };
-
+  }
   export enum Kind {
     TYPE_UNKNOWN = 0,
     TYPE_DOUBLE = 1,
@@ -161,8 +160,8 @@ export class Enum extends jspb.Message {
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Enum.AsObject;
   static toObject(includeInstance: boolean, msg: Enum): Enum.AsObject;
-  static extensions: { [key: number]: jspb.ExtensionFieldInfo<jspb.Message> };
-  static extensionsBinary: { [key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message> };
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Enum, writer: jspb.BinaryWriter): void;
   static deserializeBinary(bytes: Uint8Array): Enum;
   static deserializeBinaryFromReader(message: Enum, reader: jspb.BinaryReader): Enum;
@@ -175,7 +174,7 @@ export namespace Enum {
     optionsList: Array<Option.AsObject>,
     sourceContext: google_protobuf_source_context_pb.SourceContext.AsObject,
     syntax: Syntax,
-  };
+  }
 }
 
 export class EnumValue extends jspb.Message {
@@ -193,8 +192,8 @@ export class EnumValue extends jspb.Message {
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): EnumValue.AsObject;
   static toObject(includeInstance: boolean, msg: EnumValue): EnumValue.AsObject;
-  static extensions: { [key: number]: jspb.ExtensionFieldInfo<jspb.Message> };
-  static extensionsBinary: { [key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message> };
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: EnumValue, writer: jspb.BinaryWriter): void;
   static deserializeBinary(bytes: Uint8Array): EnumValue;
   static deserializeBinaryFromReader(message: EnumValue, reader: jspb.BinaryReader): EnumValue;
@@ -205,7 +204,7 @@ export namespace EnumValue {
     name: string,
     number: number,
     optionsList: Array<Option.AsObject>,
-  };
+  }
 }
 
 export class Option extends jspb.Message {
@@ -220,8 +219,8 @@ export class Option extends jspb.Message {
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Option.AsObject;
   static toObject(includeInstance: boolean, msg: Option): Option.AsObject;
-  static extensions: { [key: number]: jspb.ExtensionFieldInfo<jspb.Message> };
-  static extensionsBinary: { [key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message> };
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Option, writer: jspb.BinaryWriter): void;
   static deserializeBinary(bytes: Uint8Array): Option;
   static deserializeBinaryFromReader(message: Option, reader: jspb.BinaryReader): Option;
@@ -231,7 +230,7 @@ export namespace Option {
   export type AsObject = {
     name: string,
     value: google_protobuf_any_pb.Any.AsObject,
-  };
+  }
 }
 
 export enum Syntax {

@@ -25,8 +25,8 @@ export class Version extends jspb.Message {
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Version.AsObject;
   static toObject(includeInstance: boolean, msg: Version): Version.AsObject;
-  static extensions: { [key: number]: jspb.ExtensionFieldInfo<jspb.Message> };
-  static extensionsBinary: { [key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message> };
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: Version, writer: jspb.BinaryWriter): void;
   static deserializeBinary(bytes: Uint8Array): Version;
   static deserializeBinaryFromReader(message: Version, reader: jspb.BinaryReader): Version;
@@ -38,7 +38,7 @@ export namespace Version {
     minor: number,
     patch: number,
     suffix: string,
-  };
+  }
 }
 
 export class CodeGeneratorRequest extends jspb.Message {
@@ -65,8 +65,8 @@ export class CodeGeneratorRequest extends jspb.Message {
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CodeGeneratorRequest.AsObject;
   static toObject(includeInstance: boolean, msg: CodeGeneratorRequest): CodeGeneratorRequest.AsObject;
-  static extensions: { [key: number]: jspb.ExtensionFieldInfo<jspb.Message> };
-  static extensionsBinary: { [key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message> };
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: CodeGeneratorRequest, writer: jspb.BinaryWriter): void;
   static deserializeBinary(bytes: Uint8Array): CodeGeneratorRequest;
   static deserializeBinaryFromReader(message: CodeGeneratorRequest, reader: jspb.BinaryReader): CodeGeneratorRequest;
@@ -78,7 +78,7 @@ export namespace CodeGeneratorRequest {
     parameter: string,
     protoFileList: Array<google_protobuf_descriptor_pb.FileDescriptorProto.AsObject>,
     compilerVersion: Version.AsObject,
-  };
+  }
 }
 
 export class CodeGeneratorResponse extends jspb.Message {
@@ -95,8 +95,8 @@ export class CodeGeneratorResponse extends jspb.Message {
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): CodeGeneratorResponse.AsObject;
   static toObject(includeInstance: boolean, msg: CodeGeneratorResponse): CodeGeneratorResponse.AsObject;
-  static extensions: { [key: number]: jspb.ExtensionFieldInfo<jspb.Message> };
-  static extensionsBinary: { [key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message> };
+  static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+  static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
   static serializeBinaryToWriter(message: CodeGeneratorResponse, writer: jspb.BinaryWriter): void;
   static deserializeBinary(bytes: Uint8Array): CodeGeneratorResponse;
   static deserializeBinaryFromReader(message: CodeGeneratorResponse, reader: jspb.BinaryReader): CodeGeneratorResponse;
@@ -106,8 +106,7 @@ export namespace CodeGeneratorResponse {
   export type AsObject = {
     error: string,
     fileList: Array<CodeGeneratorResponse.File.AsObject>,
-  };
-
+  }
   export class File extends jspb.Message {
     hasName(): boolean;
     clearName(): void;
@@ -127,8 +126,8 @@ export namespace CodeGeneratorResponse {
     serializeBinary(): Uint8Array;
     toObject(includeInstance?: boolean): File.AsObject;
     static toObject(includeInstance: boolean, msg: File): File.AsObject;
-    static extensions: { [key: number]: jspb.ExtensionFieldInfo<jspb.Message> };
-    static extensionsBinary: { [key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message> };
+    static extensions: {[key: number]: jspb.ExtensionFieldInfo<jspb.Message>};
+    static extensionsBinary: {[key: number]: jspb.ExtensionFieldBinaryInfo<jspb.Message>};
     static serializeBinaryToWriter(message: File, writer: jspb.BinaryWriter): void;
     static deserializeBinary(bytes: Uint8Array): File;
     static deserializeBinaryFromReader(message: File, reader: jspb.BinaryReader): File;
@@ -139,7 +138,7 @@ export namespace CodeGeneratorResponse {
       name: string,
       insertionPoint: string,
       content: string,
-    };
+    }
   }
 }
 
