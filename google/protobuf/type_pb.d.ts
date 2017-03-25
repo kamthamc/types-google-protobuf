@@ -24,7 +24,7 @@ export class Type extends jspb.Message {
   hasSourceContext(): boolean;
   clearSourceContext(): void;
   getSourceContext(): google_protobuf_source_context_pb.SourceContext | undefined;
-  setSourceContext(value: google_protobuf_source_context_pb.SourceContext | undefined): void;
+  setSourceContext(value?: google_protobuf_source_context_pb.SourceContext): void;
 
   getSyntax(): Syntax;
   setSyntax(value: Syntax): void;
@@ -45,7 +45,7 @@ export namespace Type {
     fieldsList: Array<Field.AsObject>,
     oneofsList: Array<string>,
     optionsList: Array<Option.AsObject>,
-    sourceContext: google_protobuf_source_context_pb.SourceContext.AsObject | undefined,
+    sourceContext?: google_protobuf_source_context_pb.SourceContext.AsObject,
     syntax: Syntax,
   }
 }
@@ -106,6 +106,7 @@ export namespace Field {
     jsonName: string,
     defaultValue: string,
   }
+
   export enum Kind {
     TYPE_UNKNOWN = 0,
     TYPE_DOUBLE = 1,
@@ -127,6 +128,7 @@ export namespace Field {
     TYPE_SINT32 = 17,
     TYPE_SINT64 = 18,
   }
+
   export enum Cardinality {
     CARDINALITY_UNKNOWN = 0,
     CARDINALITY_OPTIONAL = 1,
@@ -152,7 +154,7 @@ export class Enum extends jspb.Message {
   hasSourceContext(): boolean;
   clearSourceContext(): void;
   getSourceContext(): google_protobuf_source_context_pb.SourceContext | undefined;
-  setSourceContext(value: google_protobuf_source_context_pb.SourceContext | undefined): void;
+  setSourceContext(value?: google_protobuf_source_context_pb.SourceContext): void;
 
   getSyntax(): Syntax;
   setSyntax(value: Syntax): void;
@@ -172,7 +174,7 @@ export namespace Enum {
     name: string,
     enumvalueList: Array<EnumValue.AsObject>,
     optionsList: Array<Option.AsObject>,
-    sourceContext: google_protobuf_source_context_pb.SourceContext.AsObject | undefined,
+    sourceContext?: google_protobuf_source_context_pb.SourceContext.AsObject,
     syntax: Syntax,
   }
 }
@@ -214,7 +216,7 @@ export class Option extends jspb.Message {
   hasValue(): boolean;
   clearValue(): void;
   getValue(): google_protobuf_any_pb.Any | undefined;
-  setValue(value: google_protobuf_any_pb.Any | undefined): void;
+  setValue(value?: google_protobuf_any_pb.Any): void;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Option.AsObject;
@@ -229,7 +231,7 @@ export class Option extends jspb.Message {
 export namespace Option {
   export type AsObject = {
     name: string,
-    value: google_protobuf_any_pb.Any.AsObject | undefined,
+    value?: google_protobuf_any_pb.Any.AsObject,
   }
 }
 
