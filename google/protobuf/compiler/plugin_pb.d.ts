@@ -34,10 +34,10 @@ export class Version extends jspb.Message {
 
 export namespace Version {
   export type AsObject = {
-    major: number,
-    minor: number,
-    patch: number,
-    suffix: string,
+    major: number | undefined,
+    minor: number | undefined,
+    patch: number | undefined,
+    suffix: string | undefined,
   }
 }
 
@@ -75,7 +75,7 @@ export class CodeGeneratorRequest extends jspb.Message {
 export namespace CodeGeneratorRequest {
   export type AsObject = {
     fileToGenerateList: Array<string>,
-    parameter: string,
+    parameter: string | undefined,
     protoFileList: Array<google_protobuf_descriptor_pb.FileDescriptorProto.AsObject>,
     compilerVersion: Version.AsObject,
   }
@@ -104,7 +104,7 @@ export class CodeGeneratorResponse extends jspb.Message {
 
 export namespace CodeGeneratorResponse {
   export type AsObject = {
-    error: string,
+    error: string | undefined,
     fileList: Array<CodeGeneratorResponse.File.AsObject>,
   }
 
@@ -136,9 +136,9 @@ export namespace CodeGeneratorResponse {
 
   export namespace File {
     export type AsObject = {
-      name: string,
-      insertionPoint: string,
-      content: string,
+      name: string | undefined,
+      insertionPoint: string | undefined,
+      content: string | undefined,
     }
   }
 }
