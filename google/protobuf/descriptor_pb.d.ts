@@ -184,6 +184,7 @@ export namespace DescriptorProto {
     reservedRangeList: Array<DescriptorProto.ReservedRange.AsObject>,
     reservedNameList: Array<string>,
   }
+
   export class ExtensionRange extends jspb.Message {
     hasStart(): boolean;
     clearStart(): void;
@@ -239,7 +240,6 @@ export namespace DescriptorProto {
       end: number,
     }
   }
-
 }
 
 export class FieldDescriptorProto extends jspb.Message {
@@ -635,6 +635,7 @@ export namespace FileOptions {
     swiftPrefix: string,
     uninterpretedOptionList: Array<UninterpretedOption.AsObject>,
   }
+
   export enum OptimizeMode {
     SPEED = 1,
     CODE_SIZE = 2,
@@ -744,6 +745,7 @@ export namespace FieldOptions {
     weak: boolean,
     uninterpretedOptionList: Array<UninterpretedOption.AsObject>,
   }
+
   export enum CType {
     STRING = 0,
     CORD = 1,
@@ -900,6 +902,7 @@ export namespace MethodOptions {
     idempotencyLevel: MethodOptions.IdempotencyLevel,
     uninterpretedOptionList: Array<UninterpretedOption.AsObject>,
   }
+
   export enum IdempotencyLevel {
     IDEMPOTENCY_UNKNOWN = 0,
     NO_SIDE_EFFECTS = 1,
@@ -965,6 +968,7 @@ export namespace UninterpretedOption {
     stringValue: Uint8Array | string,
     aggregateValue: string,
   }
+
   export class NamePart extends jspb.Message {
     hasNamePart(): boolean;
     clearNamePart(): void;
@@ -992,7 +996,6 @@ export namespace UninterpretedOption {
       isExtension: boolean,
     }
   }
-
 }
 
 export class SourceCodeInfo extends jspb.Message {
@@ -1015,6 +1018,7 @@ export namespace SourceCodeInfo {
   export type AsObject = {
     locationList: Array<SourceCodeInfo.Location.AsObject>,
   }
+
   export class Location extends jspb.Message {
     clearPathList(): void;
     getPathList(): Array<number>;
@@ -1060,7 +1064,6 @@ export namespace SourceCodeInfo {
       leadingDetachedCommentsList: Array<string>,
     }
   }
-
 }
 
 export class GeneratedCodeInfo extends jspb.Message {
@@ -1083,6 +1086,7 @@ export namespace GeneratedCodeInfo {
   export type AsObject = {
     annotationList: Array<GeneratedCodeInfo.Annotation.AsObject>,
   }
+
   export class Annotation extends jspb.Message {
     clearPathList(): void;
     getPathList(): Array<number>;

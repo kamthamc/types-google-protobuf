@@ -78,6 +78,7 @@ export namespace Value {
     structValue: Struct.AsObject,
     listValue: ListValue.AsObject,
   }
+
   export enum KindCase {
     KIND_NOT_SET = 0,
     NULL_VALUE = 1,

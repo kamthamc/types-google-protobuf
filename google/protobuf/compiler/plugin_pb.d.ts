@@ -107,6 +107,7 @@ export namespace CodeGeneratorResponse {
     error: string,
     fileList: Array<CodeGeneratorResponse.File.AsObject>,
   }
+
   export class File extends jspb.Message {
     hasName(): boolean;
     clearName(): void;
