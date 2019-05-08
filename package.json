@@ -10,7 +10,7 @@
   "author": "Chaitanya",
   "license": "MIT",
   "devDependencies": {
-    "tslint": "^4.5.1",
-    "typescript": "^2.9.2"
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
   }
 }
