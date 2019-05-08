@@ -7,10 +7,10 @@
     "format": "./format.sh",
     "dist": "rm -rf dist && mkdir -p dist/google && cp index.d.ts dist/ && cp -R google/ dist/google && cp google-protobuf-tests.ts dist/ && cp tsconfig.json dist/ && cp dt-tslint.json dist/tslint.json"
   },
-  "author": "Marcus Longmuir",
+  "author": "Chaitanya",
   "license": "MIT",
   "devDependencies": {
     "tslint": "^4.5.1",
-    "typescript": "^2.2.1"
+    "typescript": "^2.9.2"
   }
 }
